@@ -1,0 +1,19 @@
+Cowan, Crispan, et al. "Stackguard: Automatic adaptive detection and prevention of buffer-overflow attacks." USENIX Security Symposium. Vol. 98. 1998.
+
+Cowan, Crispin, et al. "PointGuardTM: Protecting pointers from buffer overflow vulnerabilities." USENIX Security Symposium. Vol. 91. 2003.
+
+Cowan, Crispin, et al. "Buffer overflows: Attacks and defenses for the vulnerability of the decade." Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00. Vol. 2. IEEE, 2000.
+
+Dalton, Michael, Hari Kannan, and Christos Kozyrakis. "Real-World Buffer Overflow Protection for Userspace and Kernelspace." USENIX Security Symposium. 2008.
+
+Dang, Thurston HY, Petros Maniatis, and David Wagner. "The performance cost of shadow stacks and stack canaries." Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security. ACM, 2015.
+
+Ruwase, Olatunji, and Monica S. Lam. "A Practical Dynamic Buffer Overflow Detector." NDSS. Vol. 2004. 2004.
+
+Silberman, Peter, and Richard Johnson. "A comparison of buffer overflow prevention implementations and weaknesses." IDEFENSE, August (2004).
+
+Tian, Donghai, et al. "Kruiser: Semi-synchronized Non-blocking Concurrent Kernel Heap Buffer Overflow Monitoring." NDSS. 2012.
+
+Petsios, Theofilos, et al. "Dynaguard: Armoring canary-based protections against brute-force attacks." Proceedings of the 31st Annual Computer Security Applications Conference. ACM, 2015.
+
+Gisbert, Hector Marco, and Ismael Ripoll. "On the effectiveness of nx, ssp, renewssp, and aslr against stack buffer overflows." 2014 IEEE 13th International Symposium on Network Computing and Applications. IEEE, 2014.
