@@ -21,3 +21,5 @@
 (T) Petsios, Theofilos, et al. "Dynaguard: Armoring canary-based protections against brute-force attacks." Proceedings of the 31st Annual Computer Security Applications Conference. ACM, 2015.
 
 (J) Gisbert, Hector Marco, and Ismael Ripoll. "On the effectiveness of nx, ssp, renewssp, and aslr against stack buffer overflows." 2014 IEEE 13th International Symposium on Network Computing and Applications. IEEE, 2014.
+
+Edge, Jake (February 5, 2014). ""Strong" stack protection for GCC". Linux Weekly News. Retrieved 28 November 2014.
