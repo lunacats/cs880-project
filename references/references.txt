@@ -25,3 +25,15 @@
 Edge, Jake (February 5, 2014). ""Strong" stack protection for GCC". Linux Weekly News. Retrieved 28 November 2014. https://lwn.net/Articles/584225/
 
 Ubuntu Wiki. "Security Features". March 14, 2019 version. Retrieved April 3, 2019. https://wiki.ubuntu.com/Security/Features#stack-protector
+
+https://outflux.net/blog/archives/2014/01/27/fstack-protector-strong/
+
+http://gcc.gnu.org/ml/gcc-patches/2012-06/msg00974.html
+
+https://docs.google.com/document/d/1xXBH6rRZue4f296vGt9YQcuLVQHeE516stHwt8M9xyU/edit
+
+http://lists.llvm.org/pipermail/cfe-dev/2017-April/053662.html
+
+http://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html
+
+http://www.productive-cpp.com/hardening-cpp-programs-stack-protector/
