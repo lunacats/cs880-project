@@ -22,4 +22,6 @@
 
 (J) Gisbert, Hector Marco, and Ismael Ripoll. "On the effectiveness of nx, ssp, renewssp, and aslr against stack buffer overflows." 2014 IEEE 13th International Symposium on Network Computing and Applications. IEEE, 2014.
 
-Edge, Jake (February 5, 2014). ""Strong" stack protection for GCC". Linux Weekly News. Retrieved 28 November 2014.
+Edge, Jake (February 5, 2014). ""Strong" stack protection for GCC". Linux Weekly News. Retrieved 28 November 2014. https://lwn.net/Articles/584225/
+
+Ubuntu Wiki. "Security Features". March 14, 2019 version. Retrieved April 3, 2019. https://wiki.ubuntu.com/Security/Features#stack-protector
