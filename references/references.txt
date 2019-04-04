@@ -37,3 +37,5 @@ http://lists.llvm.org/pipermail/cfe-dev/2017-April/053662.html
 http://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html
 
 http://www.productive-cpp.com/hardening-cpp-programs-stack-protector/
+
+https://web.archive.org/web/20140430091850/http://www.research.ibm.com/trl/projects/security/ssp/
