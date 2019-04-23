@@ -1,0 +1,47 @@
+
+Automatic build of mesa-utils_6.3.2-2 on athlon by sbuild/amd64 97
+Build started at 20060411-1910
+******************************************************************************
+Checking available source versions...
+Fetching source files...
+Reading package lists...
+Building dependency tree...
+Need to get 59.3kB of source archives.
+Get:1 http://incoming.debian.org  mesa-utils 6.3.2-2 (dsc) [834B]
+Get:2 http://incoming.debian.org  mesa-utils 6.3.2-2 (tar) [55.8kB]
+Get:3 http://incoming.debian.org  mesa-utils 6.3.2-2 (diff) [2696B]
+Fetched 59.3kB in 1s (31.4kB/s)
+Download complete and in download only mode
+** Using build dependencies supplied by package:
+Build-Depends: debhelper (>= 4.0.0), libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, freeglut3-dev, libx11-dev (>= 1:6.2.1+cvs.20050722-1)
+Checking for already installed source dependencies...
+debhelper: missing
+libgl1-mesa-dev: missing
+libgl-dev: missing
+libglu1-mesa-dev: missing
+libglu-dev: missing
+freeglut3-dev: missing
+libx11-dev: missing
+Checking for source dependency conflicts...
+  /usr/bin/sudo /usr/bin/apt-get --purge $CHROOT_OPTIONS -q -y install debhelper libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev libx11-dev
+Reading package lists...
+Building dependency tree...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+  libx11-dev: Depends: libxi-dev (>= 1:1.0.0-1) but it is not going to be installed
+              Depends: libxkbfile-dev (>= 1:1.0.0.1-1) but it is not going to be installed
+E: Broken packages
+apt-get failed.
+Package installation failed
+Trying to reinstall removed packages:
+Trying to uninstall newly installed packages:
+Source-dependencies not satisfied; skipping mesa-utils
+******************************************************************************
+Finished at 20060411-1910
+Build needed 00:00:00, 0k disk space
+
