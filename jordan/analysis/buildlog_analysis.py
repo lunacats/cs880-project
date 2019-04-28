@@ -25,7 +25,10 @@ def main():
     for f in files:
         file_path = os.path.join(directory, f)
         with open(file_path, 'r') as fd:
-            raw_text = fd.read()
+            try:
+                raw_text = fd.read()
+            except UnicodeDecodeError as err:
+                print("UnicodeDecodeError %s in %s" % (err, file_path))
             lines = raw_text.splitlines()
 
         # process line-by-line
