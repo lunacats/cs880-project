@@ -15,7 +15,7 @@ def main():
         sys.exit(1) 
 
     directory = sys.argv[1]
-    if not os.isdir(directory):
+    if not os.path.isdir(directory):
         print("path %s does not exist or is a file" % (directory))
         sys.exit(1)
     files = os.listdir(directory)
