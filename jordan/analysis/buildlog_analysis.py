@@ -54,9 +54,9 @@ def main():
         num_stack_protector_all = 0
         num_no_stack_protection = 0
         for gcc in file_gcc_lines[k]:
-            if '-fstack-protector' in gcc:
+            if '-fstack-protector ' in gcc:
                 num_stack_protector += 1
-            elif '-fstack-protector-string' in gcc:
+            elif '-fstack-protector-strong' in gcc:
                 num_stack_protector_strong += 1
             elif '-fstack-protector-all' in gcc:
                 num_stack_protector_all += 1
