@@ -62,7 +62,8 @@ def main():
                 num_stack_protector_all += 1
             else:
                 num_no_stack_protection += 1
-        row = [file_gcc_lines[k], 
+        row = [k,
+               num_gcc, 
                num_stack_protector, 
                num_stack_protector_strong, 
                num_stack_protector_all, 
