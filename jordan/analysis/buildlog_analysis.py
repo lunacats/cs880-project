@@ -3,7 +3,7 @@
 # usage: buildlog_analysis.py <directory>
 #
 
-
+import csv
 import os
 import sys
 
@@ -37,10 +37,34 @@ def main():
         file_gcc_lines[f] = gcc_lines
 
     # analyze the gcc lines for each file
+    # name, num gcc, num_stack_protector, num_stack_protector_strong, num_stack_protector_all, num_no_stack_protection
+    csvfd = open("buildlog_analysis.csv", 'w', newline='')
+    csv_writer = csv.writer(csvfd, dialect='excel')
+    csv_writer.writerow(["package", "num_gcc", "stack_protector", "stack_protector_strong", "stack_protector_all", "no_stack_protection"])
     print("lines:")
     for k in sorted(file_gcc_lines):
         print("%s = %s" % (k, file_gcc_lines[k]))
-
+        row = []
+        num_gcc = len(file_gcc_lines[k])
+        num_stack_protector = 0
+        num_stack_protector_strong = 0
+        num_stack_protector_all = 0
+        for gcc in file_gcc_lines[k]:
+            if '-fstack-protector' in gcc:
+                num_stack_protector += 1
+            elif '-fstack-protector-string' in gcc:
+                num_stack_protector_strong += 1
+            elif '-fstack-protector-all' in gcc:
+                num_stack_protector_all += 1
+            else:
+                num_no_stack_protection += 1
+        row = [file_gcc_lines[k], 
+               num_stack_protector, 
+               num_stack_protector_strong, 
+               num_stack_protector_all, 
+               num_no_stack_protection]
+        csv_writer.writerow(row)
+    csvfd.close()
     
 
 if __name__ == "__main__":
