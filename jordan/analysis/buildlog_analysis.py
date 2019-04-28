@@ -24,7 +24,7 @@ def main():
     file_gcc_lines = {}
     for f in files:
         file_path = os.path.join(directory, f)
-        with open(file_path, 'r') as fd:
+        with open(file_path, 'r', encoding='ISO-8859-1') as fd:
             try:
                 raw_text = fd.read()
             except UnicodeDecodeError as err:
@@ -52,6 +52,7 @@ def main():
         num_stack_protector = 0
         num_stack_protector_strong = 0
         num_stack_protector_all = 0
+        num_no_stack_protection = 0
         for gcc in file_gcc_lines[k]:
             if '-fstack-protector' in gcc:
                 num_stack_protector += 1
