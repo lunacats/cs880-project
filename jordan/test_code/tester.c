@@ -16,7 +16,7 @@ void read_data_buffer(FILE *fp) {
     char buff[buff_size];
 
     fgets(buff, buff_size, fp);
-    print("buff = %s\n", buff);
+    printf("buff = %s\n", buff);
 }
 
 // main function
