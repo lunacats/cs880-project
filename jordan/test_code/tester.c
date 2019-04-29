@@ -8,6 +8,7 @@ Jordan Chadwick
 */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 // read_data function
 void read_data_buffer(FILE *fp) {
