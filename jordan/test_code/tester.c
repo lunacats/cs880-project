@@ -11,7 +11,7 @@ Jordan Chadwick
 #include <stdio.h>
 
 // read_data function
-void read_file(FILE *fp) {
+int read_file(FILE *fp) {
     int buff_size = 255;
     char buff[buff_size];
 
