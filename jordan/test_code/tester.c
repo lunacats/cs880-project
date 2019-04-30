@@ -15,7 +15,7 @@ int read_file(FILE *fp) {
     int buff_size = 255;
     char buff[buff_size];
 
-    if (fgets(buff, buff_size, fp) == NULL);
+    if (fgets(buff, buff_size, fp) == NULL)
         return -1;
 
     printf("buff = %s\n", buff);
