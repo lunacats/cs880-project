@@ -25,13 +25,14 @@ int read_file(FILE *fp) {
 
 // main function
 int main(int argc, char const *argv[]) {
+    int chars_read;
 
     FILE *fp;
     fp = fopen(argv[1], "r");
     
     chars_read = read_file(fp);
     while(chars_read != -1) {
-        chars_read = read_file(fp)
+        chars_read = read_file(fp);
     }
 
     return 0;
