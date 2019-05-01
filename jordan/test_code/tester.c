@@ -41,6 +41,13 @@ int main(int argc, char const *argv[]) {
     int chars_read;
 
     FILE *fp;
+
+    // check to ensure an argument is provided
+    if(argc != 2) {
+        printf("Must provide a file path to read");
+        return 1;
+    }
+
     fp = fopen(argv[1], "r");
     
     chars_read = read_file(fp);
