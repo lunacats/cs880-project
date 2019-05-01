@@ -44,7 +44,7 @@ int main(int argc, char const *argv[]) {
     fp = fopen(argv[1], "r");
     
     chars_read = read_file(fp);
-    while(TRUE) {
+    while(1) {
         chars_read = read_file(fp);
         if(chars_read == NULL)
             break;
