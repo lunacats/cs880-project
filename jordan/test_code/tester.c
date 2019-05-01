@@ -46,10 +46,10 @@ int main(int argc, char const *argv[]) {
     chars_read = read_file(fp);
     while(1) {
         chars_read = read_file(fp);
-        if(chars_read == NULL)
+        if(chars_read == -1)
             break;
         chars_read = read_file_small(fp);
-        if(chars_read == NULL)
+        if(chars_read == -1)
             break;
     }
 
