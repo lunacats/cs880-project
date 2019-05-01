@@ -10,7 +10,19 @@ Jordan Chadwick
 #include <stdlib.h>
 #include <stdio.h>
 
-// read_data function
+// read_file small buffer function
+int read_file_small(FILE *fp) {
+    int buff_size = 4;
+    char buff[buff_size];
+
+    if (fgets(buff, buff_size, fp) == NULL)
+        return -1;
+
+    return buff_size;
+}
+
+
+// read_file function
 int read_file(FILE *fp) {
     int buff_size = 255;
     char buff[buff_size];
@@ -18,10 +30,11 @@ int read_file(FILE *fp) {
     if (fgets(buff, buff_size, fp) == NULL)
         return -1;
 
-    printf("buff = %s\n", buff);
+    //printf("buff = %s\n", buff);
 
     return buff_size;
 }
+
 
 // main function
 int main(int argc, char const *argv[]) {
@@ -31,8 +44,13 @@ int main(int argc, char const *argv[]) {
     fp = fopen(argv[1], "r");
     
     chars_read = read_file(fp);
-    while(chars_read != -1) {
+    while(TRUE) {
         chars_read = read_file(fp);
+        if(chars_read == NULL)
+            break;
+        chars_read = read_file_small(fp);
+        if(chars_read == NULL)
+            break;
     }
 
     return 0;
