@@ -38,8 +38,7 @@ def main():
         # show all section data
         if not isinstance(section, NullSection):
             print("section %s" % section['sh_name'])
-            for k in section.keys():
-                print("\t%s = %s" % (k, section[k]))
+            print("%s" % section)
 
 
 def print_help():
