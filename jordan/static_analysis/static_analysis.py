@@ -36,6 +36,7 @@ def main():
     file_path = args.file_path
     verbose = args.verbose
     
+    print("file path = %s" % file_path)
     if not os.path.isfile(file_path):
         print("Invalid file path, file does not exist or is a directory")
         sys.exit(2)
