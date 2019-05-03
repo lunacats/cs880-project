@@ -37,9 +37,9 @@ def main():
     for section in elffile.iter_sections():
         # show all section data
         if isinstance(section, SymbolTableSection):
-            print("symbols:")
+            print("%s symbols:" % section.name)
             for i, symbol in enumerate(section.iter_symbols()):
-                print("\t%s - %s" % (i, symbol))
+                print("\t%s - %s" % (i, symbol.name))
             
 
 
