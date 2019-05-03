@@ -25,14 +25,15 @@ stack_check_sections = ["__stack_chk_fail", "__stack_smash_handler"]
 
 def main():
     '''main function'''
-    verbose = False
     # argument parsing
     parser = argparse.ArgumentParser(description='ELF binary stack protection parser')
     parser.add_argument('file_path', nargs=1)
     parser.add_argument('--verbose', dest='verbose', action='store_true')
 
     args = parser.parse_args()
-    print(args)
+    
+    file_path = args.file_path
+    verbose = args.verbose
     
     if not os.path.isfile(file_path):
         print("Invalid file path, file does not exist or is a directory")
@@ -43,14 +44,17 @@ def main():
     elffile = ELFFile(fd)
 
     # sections
-    print("SYMBOL TABLE SECTIONS:")
+    if verbose:
+        print("SYMBOL TABLE SECTIONS:")
     for section in elffile.iter_sections():
         # show all section data
         if isinstance(section, SymbolTableSection):
-            print("%s symbols:" % section.name)
-            print("\tnumber - name")
+            if verbose:
+                print("%s symbols:" % section.name)
+                print("\tnumber - name")
             for i, symbol in enumerate(section.iter_symbols()):
-                print("\t%s - %s" % (i, symbol.name))
+                if verbose:
+                    print("\t%s - %s" % (i, symbol.name))
             
 
 
