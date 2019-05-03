@@ -34,7 +34,10 @@ def main():
     # sections
     print("SECTIONS:")
     for section in elffile.iter_sections():
-        print(section)
+        # show all section data
+        print("section %s" % section['sh_name'])
+        for k in section.keys():
+            print("\t%s = %s" % (k, section[k]))
 
 
 def print_help():
