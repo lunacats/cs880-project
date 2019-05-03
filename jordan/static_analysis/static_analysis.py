@@ -30,7 +30,11 @@ def main():
     # open the file and create the ELFFile object
     fd = open(file_path, 'rb')
     elffile = ELFFile(fd)
-    print(elffile.iter_sections())
+
+    # sections
+    print("SECTIONS:")
+    for section in elffile.iter_sections():
+        print(section)
 
 
 def print_help():
