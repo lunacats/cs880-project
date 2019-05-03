@@ -38,8 +38,9 @@ def main():
         # show all section data
         if isinstance(section, SymbolTableSection):
             print("%s symbols:" % section.name)
+            print("\tnumber - name\tentry")
             for i, symbol in enumerate(section.iter_symbols()):
-                print("\t%s - %s" % (i, symbol.name))
+                print("\t%s - %s\t%s" % (i, symbol.name, symbol.entry))
             
 
 
