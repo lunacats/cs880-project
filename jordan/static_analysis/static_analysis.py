@@ -5,7 +5,15 @@
 # Returns the number of function calls in the binary and
 # the number protected by stack overflow canaries.
 #
+# Usage:
+# static_analysis.py [OPTIONS] <ELF binary>
+#   Options:
+#       --verbose:      prints verbose details of the
+#                       ELF symbol table
+#
+#
 
+import argparse
 import os
 import sys
 from elftools.elf.elffile import ELFFile
@@ -17,13 +25,15 @@ stack_check_sections = ["__stack_chk_fail", "__stack_smash_handler"]
 
 def main():
     '''main function'''
+    verbose = False
+    # argument parsing
+    parser = argparse.ArgumentParser(description='ELF binary stack protection parser')
+    parser.add_argument('file_path', nargs=1)
+    parser.add_argument('--verbose', dest='verbose', action='store_true')
 
-    if len(sys.argv) != 2:
-        print("Invalid number of arguments.")
-        print_help()
-        sys.exit(1)
+    args = parser.parse_args()
+    print(args)
     
-    file_path = sys.argv[1]
     if not os.path.isfile(file_path):
         print("Invalid file path, file does not exist or is a directory")
         sys.exit(2)
