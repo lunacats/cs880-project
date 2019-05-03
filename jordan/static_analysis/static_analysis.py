@@ -38,7 +38,9 @@ def main():
         # show all section data
         if not isinstance(section, NullSection):
             print("section %s" % section['sh_name'])
-            print("%s" % section)
+            for v in vars(section):
+                print("%s" % v)
+            
 
 
 def print_help():
