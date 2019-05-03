@@ -31,6 +31,7 @@ def main():
     parser.add_argument('--verbose', dest='verbose', action='store_true')
 
     args = parser.parse_args()
+    print(args)
     
     file_path = args.file_path
     verbose = args.verbose
