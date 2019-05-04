@@ -17,12 +17,14 @@ import argparse
 import os
 import sys
 from capstone import *
+from elftools.common.exceptions import ELFError
 from elftools.elf.elffile import ELFFile
 from elftools.elf.relocation import RelocationSection
 from elftools.elf.sections import SymbolTableSection
 from elftools.elf.sections import NullSection
 
 stack_check_sections = ["__stack_chk_fail", "__stack_smash_handler"]
+reladyn_sections = [".rela.dyn"]
 
 
 def main():
@@ -47,7 +49,11 @@ def main():
 
     # open the file and create the ELFFile object
     fd = open(file_path, 'rb')
-    elffile = ELFFile(fd)
+    try:
+        elffile = ELFFile(fd)
+    except ELFError e:
+        print("%s: NOT AN ELF FILE" % file_path)
+        sys.exit(1)
 
     # sections
     symbol_table_sections = []
