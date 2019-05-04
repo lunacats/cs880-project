@@ -59,6 +59,13 @@ def main():
         elif isinstance(section, RelocationSection):
             relocation_sections.append(section)
 
+    # check for stack-protection
+    if stack_protect_check:
+        for section in symbol_table_sections:
+            for i, symbol in enumerate(section.iter_symbols()):
+                if symbol.name in stack_check_sections:
+                    stack_protection_enabled = True
+    
     # verbose output
     if verbose:
         print("SYMBOL TABLE SECTIONS:")
@@ -68,8 +75,6 @@ def main():
             for i, symbol in enumerate(section.iter_symbols()):
                 if symbol.name is not '':
                     print("\t%s - %s" % (i, symbol.name))
-                if symbol.name in stack_check_sections:
-                    stack_protection_enabled = True
 
         print("\nRELOCATION SECTIONS:")
         for section in relocation_sections:
