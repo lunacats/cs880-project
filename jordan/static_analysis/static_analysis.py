@@ -48,14 +48,31 @@ def main():
     elffile = ELFFile(fd)
 
     # sections
-    print("SYMBOL TABLE SECTIONS:")
+    symbol_table_sections = []
+    relocation_sections = []
     for section in elffile.iter_sections():
         # show all section data
         if isinstance(section, SymbolTableSection):
-            print("%s symbols:" % section.name)
-            print("\tnumber - name")
-            for i, symbol in enumerate(section.iter_symbols()):
-                print("\t%s - %s" % (i, symbol.name))
+            symbol_table_sections.append(section)
+        elif isinstance(section, RelocationSection):
+            relocation_sections.append(section)
+
+    print("SYMBOL TABLE SECTIONS:")
+    for section in symbol_table_sections:
+        print("%s symbols:" % section.name)
+        print("\tnumber - name")
+        for i, symbol in enumerate(section.iter_symbols()):
+            if symbol.name is not None:
+                print("\t%s - %s - %s" % (i, symbol.name))
+
+    print("RELOCATION SECTIONS:")
+    for section in relocation_sections:
+        print('%s:' % section.name)
+        symbol_table = section.get_section(section['sh_link'])
+        for relocation in section.iter_relocations():
+            symbol = symbol_table.get_symbol(relocation['r_info_sym'])
+            addr = hex(relocation['r_offset'])
+            print("%s 0x%x" % (symbol.name, addr))
 
     # disassemble
     print("DISASSEMBLY:")
