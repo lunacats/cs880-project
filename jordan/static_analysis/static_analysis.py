@@ -69,7 +69,7 @@ def main():
     print("RELOCATION SECTIONS:")
     for section in relocation_sections:
         print('%s:' % section.name)
-        symbol_table = section.get_section(section['sh_link'])
+        symbol_table = elffile.get_section(section['sh_link'])
         for relocation in section.iter_relocations():
             symbol = symbol_table.get_symbol(relocation['r_info_sym'])
             addr = hex(relocation['r_offset'])
