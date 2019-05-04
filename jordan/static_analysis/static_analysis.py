@@ -30,8 +30,8 @@ def main():
     # argument parsing
     parser = argparse.ArgumentParser(description='ELF binary stack protection parser')
     parser.add_argument('file_path', nargs=1)
-    parser.add_argument('--verbose', dest='verbose', action='store_true')
-    parser.add_argument('--stack-protect-check', dest='stack_protect_check', action='store_true')
+    parser.add_argument('-v', dest='verbose', action='store_true')
+    parser.add_argument('-s', dest='stack_protect_check', action='store_true')
 
     args = parser.parse_args()
     # print(args)
@@ -59,35 +59,38 @@ def main():
         elif isinstance(section, RelocationSection):
             relocation_sections.append(section)
 
-    print("SYMBOL TABLE SECTIONS:")
-    for section in symbol_table_sections:
-        print("%s symbols:" % section.name)
-        print("\tnumber - name")
-        for i, symbol in enumerate(section.iter_symbols()):
-            if symbol.name is not '':
-                print("\t%s - %s" % (i, symbol.name))
-            if symbol.name in stack_check_sections:
-                stack_protection_enabled = True
+    # verbose output
+    if verbose:
+        print("SYMBOL TABLE SECTIONS:")
+        for section in symbol_table_sections:
+            print("%s symbols:" % section.name)
+            print("\tnumber - name")
+            for i, symbol in enumerate(section.iter_symbols()):
+                if symbol.name is not '':
+                    print("\t%s - %s" % (i, symbol.name))
+                if symbol.name in stack_check_sections:
+                    stack_protection_enabled = True
 
-    print("\nRELOCATION SECTIONS:")
-    for section in relocation_sections:
-        print('%s:' % section.name)
-        symbol_table = elffile.get_section(section['sh_link'])
-        for relocation in section.iter_relocations():
-            symbol = symbol_table.get_symbol(relocation['r_info_sym'])
-            addr = hex(relocation['r_offset'])
-            print("%s %s" % (symbol.name, addr))
+        print("\nRELOCATION SECTIONS:")
+        for section in relocation_sections:
+            print('%s:' % section.name)
+            symbol_table = elffile.get_section(section['sh_link'])
+            for relocation in section.iter_relocations():
+                symbol = symbol_table.get_symbol(relocation['r_info_sym'])
+                addr = hex(relocation['r_offset'])
+                print("%s %s" % (symbol.name, addr))
 
-    # disassemble
-    print("\nDISASSEMBLY:")
-    code = elffile.get_section_by_name('.text')
-    opcodes = code.data()
-    addr = code['sh_addr']
-    print("Entry Point: %s" % (hex(elffile.header['e_entry'])))
-    md = Cs(CS_ARCH_X86, CS_MODE_64)
-    for i in md.disasm(opcodes, addr):
-        print("0x%x:\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
+        # disassemble
+        print("\nDISASSEMBLY:")
+        code = elffile.get_section_by_name('.text')
+        opcodes = code.data()
+        addr = code['sh_addr']
+        print("Entry Point: %s" % (hex(elffile.header['e_entry'])))
+        md = Cs(CS_ARCH_X86, CS_MODE_64)
+        for i in md.disasm(opcodes, addr):
+            print("0x%x:\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
 
+    # print stack protection status
     if stack_protect_check:
         if stack_protection_enabled:
             print("%s: ENABLED" % (file_path))
@@ -97,7 +100,7 @@ def main():
 
 def print_help():
     '''prints a help message'''
-    print("Usage: static_analysis.py [--verbose|--stack-protect-check] <ELF binary file>")
+    print("Usage: static_analysis.py [-v|-s] <ELF binary file>")
 
 
 if __name__ == "__main__":
