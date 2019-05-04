@@ -30,12 +30,14 @@ def main():
     parser = argparse.ArgumentParser(description='ELF binary stack protection parser')
     parser.add_argument('file_path', nargs=1)
     parser.add_argument('--verbose', dest='verbose', action='store_true')
+    parser.add_argument('--stack-protect-check', dest='stack_protect_check', action='store_true')
 
     args = parser.parse_args()
     # print(args)
     
     file_path = args.file_path[0]
     verbose = args.verbose
+    stack_protect_check = args.stack_protect_check
     
     if not os.path.isfile(file_path):
         print("Invalid file path, file does not exist or is a directory")
@@ -46,14 +48,12 @@ def main():
     elffile = ELFFile(fd)
 
     # sections
-    if verbose:
-        print("SYMBOL TABLE SECTIONS:")
+    print("SYMBOL TABLE SECTIONS:")
     for section in elffile.iter_sections():
         # show all section data
         if isinstance(section, SymbolTableSection):
-            if verbose:
-                print("%s symbols:" % section.name)
-                print("\tnumber - name")
+            print("%s symbols:" % section.name)
+            print("\tnumber - name")
             for i, symbol in enumerate(section.iter_symbols()):
                 if verbose:
                     print("\t%s - %s" % (i, symbol.name))
@@ -71,7 +71,7 @@ def main():
 
 def print_help():
     '''prints a help message'''
-    print("Usage: static_analysis.py <ELF binary file>")
+    print("Usage: static_analysis.py [--verbose|--stack-protect-check] <ELF binary file>")
 
 
 if __name__ == "__main__":
