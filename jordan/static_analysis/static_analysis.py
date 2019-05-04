@@ -51,7 +51,7 @@ def main():
     fd = open(file_path, 'rb')
     try:
         elffile = ELFFile(fd)
-    except ELFError e:
+    except ELFError:
         print("%s: NOT AN ELF FILE" % file_path)
         sys.exit(1)
 
