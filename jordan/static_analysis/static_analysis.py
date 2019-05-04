@@ -73,7 +73,7 @@ def main():
         for relocation in section.iter_relocations():
             symbol = symbol_table.get_symbol(relocation['r_info_sym'])
             addr = hex(relocation['r_offset'])
-            print("%s 0x%x" % (symbol.name, addr))
+            print("%s %s" % (symbol.name, addr))
 
     # disassemble
     print("DISASSEMBLY:")
