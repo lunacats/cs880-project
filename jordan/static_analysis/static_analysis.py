@@ -39,6 +39,7 @@ def main():
     file_path = args.file_path[0]
     verbose = args.verbose
     stack_protect_check = args.stack_protect_check
+    stack_protection_enabled = False
     
     if not os.path.isfile(file_path):
         print("Invalid file path, file does not exist or is a directory")
@@ -65,6 +66,8 @@ def main():
         for i, symbol in enumerate(section.iter_symbols()):
             if symbol.name is not '':
                 print("\t%s - %s" % (i, symbol.name))
+            if symbol.name in stack_check_sections:
+                stack_protection_enabled = True
 
     print("\nRELOCATION SECTIONS:")
     for section in relocation_sections:
@@ -84,6 +87,12 @@ def main():
     md = Cs(CS_ARCH_X86, CS_MODE_64)
     for i in md.disasm(opcodes, addr):
         print("0x%x:\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
+
+    if stack_protect_check:
+        if stack_protection_enabled:
+            print("%s: ENABLED" % (file_path))
+        else:
+            print("%s: DISABLED" % (file_path))
 
 
 def print_help():
