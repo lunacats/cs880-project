@@ -16,6 +16,7 @@
 import argparse
 import os
 import sys
+from capstone import *
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
 from elftools.elf.sections import NullSection
@@ -31,7 +32,7 @@ def main():
     parser.add_argument('--verbose', dest='verbose', action='store_true')
 
     args = parser.parse_args()
-    print(args)
+    # print(args)
     
     file_path = args.file_path[0]
     verbose = args.verbose
@@ -56,7 +57,16 @@ def main():
             for i, symbol in enumerate(section.iter_symbols()):
                 if verbose:
                     print("\t%s - %s" % (i, symbol.name))
-            
+
+    # disassemble
+    print("DISASSEMBLY:")
+    code = elffile.get_section_by_name('.text')
+    opcodes = code.data()
+    addr = code['sh_addr']
+    print("Entry Point: %s" % (hex(elffile.header['e_entry'])))
+    md = Cs(CS_ARCH_X86, CS_MODE_64)
+    for i in md.disasm(opcodes, addr):
+        print("0x%x:\t\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
 
 
 def print_help():
