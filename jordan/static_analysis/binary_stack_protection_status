@@ -1,0 +1,1375 @@
+/bin/bash: ENABLED
+/bin/btrfs: ENABLED
+/bin/btrfs-calc-size: ENABLED
+/bin/btrfsck: ENABLED
+/bin/btrfs-convert: ENABLED
+/bin/btrfs-debug-tree: ENABLED
+/bin/btrfs-find-root: ENABLED
+/bin/btrfs-image: ENABLED
+/bin/btrfs-map-logical: ENABLED
+/bin/btrfs-select-super: ENABLED
+/bin/btrfs-show-super: ENABLED
+/bin/btrfstune: ENABLED
+/bin/btrfs-zero-log: ENABLED
+/bin/bunzip2: ENABLED
+/bin/busybox: DISABLED
+/bin/bzcat: ENABLED
+/bin/bzcmp: NOT AN ELF FILE
+/bin/bzdiff: NOT AN ELF FILE
+/bin/bzegrep: NOT AN ELF FILE
+/bin/bzexe: NOT AN ELF FILE
+/bin/bzfgrep: NOT AN ELF FILE
+/bin/bzgrep: NOT AN ELF FILE
+/bin/bzip2: ENABLED
+/bin/bzip2recover: DISABLED
+/bin/bzless: NOT AN ELF FILE
+/bin/bzmore: NOT AN ELF FILE
+/bin/cat: ENABLED
+/bin/chacl: ENABLED
+/bin/chgrp: ENABLED
+/bin/chmod: ENABLED
+/bin/chown: ENABLED
+/bin/chvt: ENABLED
+/bin/cp: ENABLED
+/bin/cpio: ENABLED
+/bin/dash: ENABLED
+/bin/date: ENABLED
+/bin/dd: ENABLED
+/bin/df: ENABLED
+/bin/dir: ENABLED
+/bin/dmesg: ENABLED
+/bin/dnsdomainname: ENABLED
+/bin/domainname: ENABLED
+/bin/dumpkeys: ENABLED
+/bin/echo: ENABLED
+/bin/egrep: NOT AN ELF FILE
+/bin/false: ENABLED
+/bin/fgconsole: ENABLED
+/bin/fgrep: NOT AN ELF FILE
+/bin/findmnt: ENABLED
+/bin/fsck.btrfs: NOT AN ELF FILE
+/bin/fusermount: ENABLED
+/bin/getfacl: ENABLED
+/bin/grep: ENABLED
+/bin/gunzip: NOT AN ELF FILE
+/bin/gzexe: NOT AN ELF FILE
+/bin/gzip: ENABLED
+/bin/hostname: ENABLED
+/bin/ip: ENABLED
+/bin/journalctl: ENABLED
+/bin/kbd_mode: ENABLED
+/bin/kill: ENABLED
+/bin/kmod: ENABLED
+/bin/less: ENABLED
+/bin/lessecho: ENABLED
+/bin/lessfile: NOT AN ELF FILE
+/bin/lesskey: ENABLED
+/bin/lesspipe: NOT AN ELF FILE
+/bin/ln: ENABLED
+/bin/loadkeys: ENABLED
+/bin/login: ENABLED
+/bin/loginctl: ENABLED
+/bin/ls: ENABLED
+/bin/lsblk: ENABLED
+/bin/lsmod: ENABLED
+/bin/mkdir: ENABLED
+/bin/mkfs.btrfs: ENABLED
+/bin/mknod: ENABLED
+/bin/mktemp: ENABLED
+/bin/more: ENABLED
+/bin/mount: ENABLED
+/bin/mountpoint: ENABLED
+/bin/mt: ENABLED
+/bin/mt-gnu: ENABLED
+/bin/mv: ENABLED
+/bin/nano: ENABLED
+/bin/nc: ENABLED
+/bin/nc.openbsd: ENABLED
+/bin/netcat: ENABLED
+/bin/netstat: ENABLED
+/bin/networkctl: ENABLED
+/bin/nisdomainname: ENABLED
+/bin/open: ENABLED
+/bin/openvt: ENABLED
+/bin/pidof: ENABLED
+/bin/ping: ENABLED
+/bin/ping6: ENABLED
+/bin/plymouth: ENABLED
+/bin/ps: ENABLED
+/bin/pwd: ENABLED
+/bin/rbash: ENABLED
+/bin/readlink: ENABLED
+/bin/rm: ENABLED
+/bin/rmdir: ENABLED
+/bin/rnano: ENABLED
+/bin/run-parts: ENABLED
+/bin/sed: ENABLED
+/bin/setfacl: ENABLED
+/bin/setfont: ENABLED
+/bin/setupcon: NOT AN ELF FILE
+/bin/sh: ENABLED
+/bin/sh.distrib: ENABLED
+/bin/sleep: ENABLED
+/bin/ss: ENABLED
+/bin/static-sh: DISABLED
+/bin/stty: ENABLED
+/bin/su: ENABLED
+/bin/sync: ENABLED
+/bin/systemctl: ENABLED
+/bin/systemd: ENABLED
+/bin/systemd-ask-password: ENABLED
+/bin/systemd-escape: ENABLED
+/bin/systemd-hwdb: ENABLED
+/bin/systemd-inhibit: ENABLED
+/bin/systemd-machine-id-setup: ENABLED
+/bin/systemd-notify: ENABLED
+/bin/systemd-tmpfiles: ENABLED
+/bin/systemd-tty-ask-password-agent: ENABLED
+/bin/tailf: ENABLED
+/bin/tar: ENABLED
+/bin/tempfile: ENABLED
+/bin/touch: ENABLED
+/bin/true: ENABLED
+/bin/udevadm: ENABLED
+/bin/ulockmgr_server: ENABLED
+/bin/umount: ENABLED
+/bin/uname: ENABLED
+/bin/uncompress: NOT AN ELF FILE
+/bin/unicode_start: NOT AN ELF FILE
+/bin/vdir: ENABLED
+/bin/wdctl: ENABLED
+/bin/which: NOT AN ELF FILE
+/bin/whiptail: ENABLED
+/bin/ypdomainname: ENABLED
+/bin/zcat: NOT AN ELF FILE
+/bin/zcmp: NOT AN ELF FILE
+/bin/zdiff: NOT AN ELF FILE
+/bin/zegrep: NOT AN ELF FILE
+/bin/zfgrep: NOT AN ELF FILE
+/bin/zforce: NOT AN ELF FILE
+/bin/zgrep: NOT AN ELF FILE
+/bin/zless: NOT AN ELF FILE
+/bin/zmore: NOT AN ELF FILE
+/bin/znew: NOT AN ELF FILE
+/sbin/agetty: ENABLED
+/sbin/apparmor_parser: ENABLED
+/sbin/badblocks: ENABLED
+/sbin/blkdiscard: ENABLED
+/sbin/blkid: ENABLED
+/sbin/blockdev: ENABLED
+/sbin/bridge: ENABLED
+/sbin/capsh: DISABLED
+/sbin/cfdisk: ENABLED
+/sbin/chcpu: ENABLED
+/sbin/crda: ENABLED
+/sbin/cryptdisks_start: NOT AN ELF FILE
+/sbin/cryptdisks_stop: NOT AN ELF FILE
+/sbin/cryptsetup: ENABLED
+/sbin/cryptsetup-reencrypt: ENABLED
+/sbin/ctrlaltdel: DISABLED
+/sbin/debugfs: ENABLED
+/sbin/depmod: ENABLED
+/sbin/dhclient: ENABLED
+/sbin/dhclient-script: NOT AN ELF FILE
+/sbin/dmeventd: ENABLED
+/sbin/dmsetup: ENABLED
+/sbin/dumpe2fs: ENABLED
+/sbin/e2fsck: ENABLED
+/sbin/e2image: ENABLED
+/sbin/e2label: ENABLED
+/sbin/e2undo: ENABLED
+/sbin/ethtool: ENABLED
+/sbin/fdisk: ENABLED
+/sbin/findfs: DISABLED
+/sbin/fsadm: NOT AN ELF FILE
+/sbin/fsck: ENABLED
+/sbin/fsck.cramfs: ENABLED
+/sbin/fsck.ext2: ENABLED
+/sbin/fsck.ext3: ENABLED
+/sbin/fsck.ext4: ENABLED
+/sbin/fsck.ext4dev: ENABLED
+/sbin/fsck.minix: ENABLED
+/sbin/fsck.nfs: NOT AN ELF FILE
+/sbin/fsck.xfs: NOT AN ELF FILE
+/sbin/fsfreeze: ENABLED
+/sbin/fstab-decode: DISABLED
+/sbin/fstrim: ENABLED
+/sbin/getcap: ENABLED
+/sbin/getpcaps: ENABLED
+/sbin/getty: ENABLED
+/sbin/halt: ENABLED
+/sbin/hwclock: ENABLED
+/sbin/ifconfig: ENABLED
+/sbin/ifdown: ENABLED
+/sbin/ifenslave: NOT AN ELF FILE
+/sbin/ifenslave-2.6: NOT AN ELF FILE
+/sbin/ifquery: ENABLED
+/sbin/ifup: ENABLED
+/sbin/init: ENABLED
+/sbin/insmod: ENABLED
+/sbin/installkernel: NOT AN ELF FILE
+/sbin/ip: ENABLED
+/sbin/ip6tables: ENABLED
+/sbin/ip6tables-restore: ENABLED
+/sbin/ip6tables-save: ENABLED
+/sbin/ipmaddr: ENABLED
+/sbin/iptables: ENABLED
+/sbin/iptables-restore: ENABLED
+/sbin/iptables-save: ENABLED
+/sbin/iptunnel: ENABLED
+/sbin/iscsiadm: ENABLED
+/sbin/iscsid: ENABLED
+/sbin/iscsi_discovery: NOT AN ELF FILE
+/sbin/iscsi-iname: ENABLED
+/sbin/iscsistart: ENABLED
+/sbin/isosize: ENABLED
+/sbin/iw: ENABLED
+/sbin/kbdrate: ENABLED
+/sbin/killall5: ENABLED
+/sbin/ldconfig: NOT AN ELF FILE
+/sbin/ldconfig.real: DISABLED
+/sbin/logsave: ENABLED
+/sbin/losetup: ENABLED
+/sbin/lsmod: ENABLED
+/sbin/lvchange: ENABLED
+/sbin/lvconvert: ENABLED
+/sbin/lvcreate: ENABLED
+/sbin/lvdisplay: ENABLED
+/sbin/lvextend: ENABLED
+/sbin/lvm: ENABLED
+/sbin/lvmchange: ENABLED
+/sbin/lvmconf: NOT AN ELF FILE
+/sbin/lvmconfig: ENABLED
+/sbin/lvmdiskscan: ENABLED
+/sbin/lvmdump: NOT AN ELF FILE
+/sbin/lvmetad: ENABLED
+/sbin/lvmpolld: ENABLED
+/sbin/lvmsadc: ENABLED
+/sbin/lvmsar: ENABLED
+/sbin/lvreduce: ENABLED
+/sbin/lvremove: ENABLED
+/sbin/lvrename: ENABLED
+/sbin/lvresize: ENABLED
+/sbin/lvs: ENABLED
+/sbin/lvscan: ENABLED
+/sbin/MAKEDEV: NOT AN ELF FILE
+/sbin/mdadm: ENABLED
+/sbin/mdmon: ENABLED
+/sbin/mii-tool: ENABLED
+/sbin/mke2fs: ENABLED
+/sbin/mkfs: ENABLED
+/sbin/mkfs.bfs: ENABLED
+/sbin/mkfs.cramfs: ENABLED
+/sbin/mkfs.ext2: ENABLED
+/sbin/mkfs.ext3: ENABLED
+/sbin/mkfs.ext4: ENABLED
+/sbin/mkfs.ext4dev: ENABLED
+/sbin/mkfs.minix: ENABLED
+/sbin/mkfs.xfs: ENABLED
+/sbin/mkhomedir_helper: ENABLED
+/sbin/mkswap: ENABLED
+/sbin/modinfo: ENABLED
+/sbin/modprobe: ENABLED
+/sbin/mount.fuse: ENABLED
+/sbin/mount.vmhgfs: ENABLED
+/sbin/nameif: ENABLED
+/sbin/pam_extrausers_chkpwd: ENABLED
+/sbin/pam_extrausers_update: ENABLED
+/sbin/pam_tally: ENABLED
+/sbin/pam_tally2: ENABLED
+/sbin/pivot_root: DISABLED
+/sbin/plipconfig: DISABLED
+/sbin/plymouthd: ENABLED
+/sbin/poweroff: ENABLED
+/sbin/pvchange: ENABLED
+/sbin/pvck: ENABLED
+/sbin/pvcreate: ENABLED
+/sbin/pvdisplay: ENABLED
+/sbin/pvmove: ENABLED
+/sbin/pvremove: ENABLED
+/sbin/pvresize: ENABLED
+/sbin/pvs: ENABLED
+/sbin/pvscan: ENABLED
+/sbin/rarp: ENABLED
+/sbin/raw: ENABLED
+/sbin/reboot: ENABLED
+/sbin/regdbdump: DISABLED
+/sbin/resize2fs: ENABLED
+/sbin/resolvconf: NOT AN ELF FILE
+/sbin/rmmod: ENABLED
+/sbin/route: ENABLED
+/sbin/rtacct: ENABLED
+/sbin/rtmon: ENABLED
+/sbin/runlevel: ENABLED
+/sbin/runuser: ENABLED
+/sbin/setcap: DISABLED
+/sbin/setvtrgb: ENABLED
+/sbin/sfdisk: ENABLED
+/sbin/shadowconfig: NOT AN ELF FILE
+/sbin/shutdown: ENABLED
+/sbin/slattach: ENABLED
+/sbin/start-stop-daemon: ENABLED
+/sbin/sulogin: ENABLED
+/sbin/swaplabel: ENABLED
+/sbin/swapoff: ENABLED
+/sbin/swapon: ENABLED
+/sbin/switch_root: ENABLED
+/sbin/sysctl: ENABLED
+/sbin/tc: ENABLED
+/sbin/telinit: ENABLED
+/sbin/tipc: ENABLED
+/sbin/tune2fs: ENABLED
+/sbin/udevadm: ENABLED
+/sbin/unix_chkpwd: ENABLED
+/sbin/unix_update: ENABLED
+/sbin/ureadahead: ENABLED
+/sbin/vconfig: ENABLED
+/sbin/veritysetup: ENABLED
+/sbin/vgcfgbackup: ENABLED
+/sbin/vgcfgrestore: ENABLED
+/sbin/vgchange: ENABLED
+/sbin/vgck: ENABLED
+/sbin/vgconvert: ENABLED
+/sbin/vgcreate: ENABLED
+/sbin/vgdisplay: ENABLED
+/sbin/vgexport: ENABLED
+/sbin/vgextend: ENABLED
+/sbin/vgimport: ENABLED
+/sbin/vgimportclone: NOT AN ELF FILE
+/sbin/vgmerge: ENABLED
+/sbin/vgmknodes: ENABLED
+/sbin/vgreduce: ENABLED
+/sbin/vgremove: ENABLED
+/sbin/vgrename: ENABLED
+/sbin/vgs: ENABLED
+/sbin/vgscan: ENABLED
+/sbin/vgsplit: ENABLED
+/sbin/wipefs: ENABLED
+/sbin/xfs_repair: ENABLED
+/sbin/xtables-multi: ENABLED
+/sbin/zramctl: ENABLED
+/usr/bin/[: ENABLED
+/usr/bin/2to3: NOT AN ELF FILE
+/usr/bin/2to3-2.7: NOT AN ELF FILE
+/usr/bin/2to3-3.5: NOT AN ELF FILE
+/usr/bin/aa-enabled: ENABLED
+/usr/bin/acpi_listen: ENABLED
+/usr/bin/add-apt-repository: NOT AN ELF FILE
+/usr/bin/addpart: ENABLED
+/usr/bin/add-patch: NOT AN ELF FILE
+/usr/bin/addr2line: ENABLED
+/usr/bin/annotate-output: NOT AN ELF FILE
+/usr/bin/apport-bug: NOT AN ELF FILE
+/usr/bin/apport-cli: NOT AN ELF FILE
+/usr/bin/apport-collect: NOT AN ELF FILE
+/usr/bin/apport-unpack: NOT AN ELF FILE
+/usr/bin/apropos: ENABLED
+/usr/bin/apt: ENABLED
+/usr/bin/apt-add-repository: NOT AN ELF FILE
+/usr/bin/apt-cache: ENABLED
+/usr/bin/apt-cdrom: ENABLED
+/usr/bin/apt-config: ENABLED
+/usr/bin/apt-extracttemplates: ENABLED
+/usr/bin/apt-ftparchive: ENABLED
+/usr/bin/apt-get: ENABLED
+/usr/bin/apt-key: NOT AN ELF FILE
+/usr/bin/apt-mark: ENABLED
+/usr/bin/apt-sortpkgs: ENABLED
+/usr/bin/ar: ENABLED
+/usr/bin/arch: ENABLED
+/usr/bin/archpath: NOT AN ELF FILE
+/usr/bin/as: ENABLED
+/usr/bin/at: ENABLED
+/usr/bin/atq: ENABLED
+/usr/bin/atrm: ENABLED
+/usr/bin/awk: ENABLED
+/usr/bin/base32: ENABLED
+/usr/bin/base64: ENABLED
+/usr/bin/basename: ENABLED
+/usr/bin/bashbug: NOT AN ELF FILE
+/usr/bin/batch: NOT AN ELF FILE
+/usr/bin/bootctl: ENABLED
+/usr/bin/bsd-from: ENABLED
+/usr/bin/bsd-write: ENABLED
+/usr/bin/bts: NOT AN ELF FILE
+/usr/bin/build-rdeps: NOT AN ELF FILE
+/usr/bin/busctl: ENABLED
+/usr/bin/byobu: NOT AN ELF FILE
+/usr/bin/byobu-config: NOT AN ELF FILE
+/usr/bin/byobu-ctrl-a: NOT AN ELF FILE
+/usr/bin/byobu-disable: NOT AN ELF FILE
+/usr/bin/byobu-disable-prompt: NOT AN ELF FILE
+/usr/bin/byobu-enable: NOT AN ELF FILE
+/usr/bin/byobu-enable-prompt: NOT AN ELF FILE
+/usr/bin/byobu-export: NOT AN ELF FILE
+/usr/bin/byobu-janitor: NOT AN ELF FILE
+/usr/bin/byobu-keybindings: NOT AN ELF FILE
+/usr/bin/byobu-launch: NOT AN ELF FILE
+/usr/bin/byobu-launcher: NOT AN ELF FILE
+/usr/bin/byobu-launcher-install: NOT AN ELF FILE
+/usr/bin/byobu-launcher-uninstall: NOT AN ELF FILE
+/usr/bin/byobu-layout: NOT AN ELF FILE
+/usr/bin/byobu-prompt: NOT AN ELF FILE
+/usr/bin/byobu-quiet: NOT AN ELF FILE
+/usr/bin/byobu-reconnect-sockets: NOT AN ELF FILE
+/usr/bin/byobu-screen: NOT AN ELF FILE
+/usr/bin/byobu-select-backend: NOT AN ELF FILE
+/usr/bin/byobu-select-profile: NOT AN ELF FILE
+/usr/bin/byobu-select-session: NOT AN ELF FILE
+/usr/bin/byobu-shell: NOT AN ELF FILE
+/usr/bin/byobu-silent: NOT AN ELF FILE
+/usr/bin/byobu-status: NOT AN ELF FILE
+/usr/bin/byobu-status-detail: NOT AN ELF FILE
+/usr/bin/byobu-tmux: NOT AN ELF FILE
+/usr/bin/byobu-ugraph: NOT AN ELF FILE
+/usr/bin/byobu-ulevel: NOT AN ELF FILE
+/usr/bin/c++: ENABLED
+/usr/bin/c2ph: NOT AN ELF FILE
+/usr/bin/c89: NOT AN ELF FILE
+/usr/bin/c89-gcc: NOT AN ELF FILE
+/usr/bin/c99: NOT AN ELF FILE
+/usr/bin/c99-gcc: NOT AN ELF FILE
+/usr/bin/cal: ENABLED
+/usr/bin/calendar: ENABLED
+/usr/bin/captoinfo: ENABLED
+/usr/bin/catchsegv: NOT AN ELF FILE
+/usr/bin/catman: ENABLED
+/usr/bin/cautious-launcher: NOT AN ELF FILE
+/usr/bin/cc: ENABLED
+/usr/bin/c++filt: ENABLED
+/usr/bin/chacl: ENABLED
+/usr/bin/chage: ENABLED
+/usr/bin/chardet3: NOT AN ELF FILE
+/usr/bin/chardetect3: NOT AN ELF FILE
+/usr/bin/chattr: ENABLED
+/usr/bin/chcon: ENABLED
+/usr/bin/chdist: NOT AN ELF FILE
+/usr/bin/checkbashisms: NOT AN ELF FILE
+/usr/bin/chfn: ENABLED
+/usr/bin/chrt: ENABLED
+/usr/bin/chsh: ENABLED
+/usr/bin/cifsiostat: ENABLED
+/usr/bin/ckbcomp: NOT AN ELF FILE
+/usr/bin/cksum: ENABLED
+/usr/bin/clear: DISABLED
+/usr/bin/clear_console: ENABLED
+/usr/bin/cmp: ENABLED
+/usr/bin/codepage: ENABLED
+/usr/bin/col: DISABLED
+/usr/bin/col1: NOT AN ELF FILE
+/usr/bin/col2: NOT AN ELF FILE
+/usr/bin/col3: NOT AN ELF FILE
+/usr/bin/col4: NOT AN ELF FILE
+/usr/bin/col5: NOT AN ELF FILE
+/usr/bin/col6: NOT AN ELF FILE
+/usr/bin/col7: NOT AN ELF FILE
+/usr/bin/col8: NOT AN ELF FILE
+/usr/bin/col9: NOT AN ELF FILE
+/usr/bin/colcrt: DISABLED
+/usr/bin/colrm: DISABLED
+/usr/bin/column: ENABLED
+/usr/bin/combinediff: ENABLED
+/usr/bin/comm: ENABLED
+/usr/bin/compose: NOT AN ELF FILE
+/usr/bin/corelist: NOT AN ELF FILE
+/usr/bin/cowpoke: NOT AN ELF FILE
+/usr/bin/cpan: NOT AN ELF FILE
+/usr/bin/cpan5.22-x86_64-linux-gnu: NOT AN ELF FILE
+/usr/bin/cpp: ENABLED
+/usr/bin/cpp-5: ENABLED
+/usr/bin/crc32: NOT AN ELF FILE
+/usr/bin/c_rehash: NOT AN ELF FILE
+/usr/bin/crontab: ENABLED
+/usr/bin/csplit: ENABLED
+/usr/bin/ctail: NOT AN ELF FILE
+/usr/bin/ctstat: ENABLED
+/usr/bin/curl: ENABLED
+/usr/bin/cut: ENABLED
+/usr/bin/cvs-debc: NOT AN ELF FILE
+/usr/bin/cvs-debi: NOT AN ELF FILE
+/usr/bin/cvs-debrelease: NOT AN ELF FILE
+/usr/bin/cvs-debuild: NOT AN ELF FILE
+/usr/bin/dbus-cleanup-sockets: ENABLED
+/usr/bin/dbus-daemon: ENABLED
+/usr/bin/dbus-monitor: ENABLED
+/usr/bin/dbus-run-session: ENABLED
+/usr/bin/dbus-send: ENABLED
+/usr/bin/dbus-update-activation-environment: ENABLED
+/usr/bin/dbus-uuidgen: DISABLED
+/usr/bin/dch: NOT AN ELF FILE
+/usr/bin/dcmd: NOT AN ELF FILE
+/usr/bin/dcontrol: NOT AN ELF FILE
+/usr/bin/dcut: NOT AN ELF FILE
+/usr/bin/dd-list: NOT AN ELF FILE
+/usr/bin/deallocvt: ENABLED
+/usr/bin/debc: NOT AN ELF FILE
+/usr/bin/debchange: NOT AN ELF FILE
+/usr/bin/debcheckout: NOT AN ELF FILE
+/usr/bin/debclean: NOT AN ELF FILE
+/usr/bin/debcommit: NOT AN ELF FILE
+/usr/bin/debconf: NOT AN ELF FILE
+/usr/bin/debconf-apt-progress: NOT AN ELF FILE
+/usr/bin/debconf-communicate: NOT AN ELF FILE
+/usr/bin/debconf-copydb: NOT AN ELF FILE
+/usr/bin/debconf-escape: NOT AN ELF FILE
+/usr/bin/debconf-set-selections: NOT AN ELF FILE
+/usr/bin/debconf-show: NOT AN ELF FILE
+/usr/bin/debdiff: NOT AN ELF FILE
+/usr/bin/debi: NOT AN ELF FILE
+/usr/bin/debpkg: DISABLED
+/usr/bin/debrelease: NOT AN ELF FILE
+/usr/bin/deb-reversion: NOT AN ELF FILE
+/usr/bin/debrsign: NOT AN ELF FILE
+/usr/bin/debsign: NOT AN ELF FILE
+/usr/bin/debsnap: NOT AN ELF FILE
+/usr/bin/deb-systemd-helper: NOT AN ELF FILE
+/usr/bin/deb-systemd-invoke: NOT AN ELF FILE
+/usr/bin/debuild: NOT AN ELF FILE
+/usr/bin/dehtmldiff: NOT AN ELF FILE
+/usr/bin/delpart: ENABLED
+/usr/bin/dep3changelog: NOT AN ELF FILE
+/usr/bin/desktop2menu: NOT AN ELF FILE
+/usr/bin/dget: NOT AN ELF FILE
+/usr/bin/dh_installxmlcatalogs: NOT AN ELF FILE
+/usr/bin/dh_pypy: NOT AN ELF FILE
+/usr/bin/dh_python2: NOT AN ELF FILE
+/usr/bin/dh_python3: NOT AN ELF FILE
+/usr/bin/diff: ENABLED
+/usr/bin/diff2patches: NOT AN ELF FILE
+/usr/bin/diff3: ENABLED
+/usr/bin/diffstat: ENABLED
+/usr/bin/dircolors: ENABLED
+/usr/bin/dirname: ENABLED
+/usr/bin/do-release-upgrade: NOT AN ELF FILE
+/usr/bin/dpkg: ENABLED
+/usr/bin/dpkg-architecture: NOT AN ELF FILE
+/usr/bin/dpkg-buildflags: NOT AN ELF FILE
+/usr/bin/dpkg-buildpackage: NOT AN ELF FILE
+/usr/bin/dpkg-checkbuilddeps: NOT AN ELF FILE
+/usr/bin/dpkg-deb: ENABLED
+/usr/bin/dpkg-depcheck: NOT AN ELF FILE
+/usr/bin/dpkg-distaddfile: NOT AN ELF FILE
+/usr/bin/dpkg-divert: ENABLED
+/usr/bin/dpkg-genbuilddeps: NOT AN ELF FILE
+/usr/bin/dpkg-genchanges: NOT AN ELF FILE
+/usr/bin/dpkg-gencontrol: NOT AN ELF FILE
+/usr/bin/dpkg-gensymbols: NOT AN ELF FILE
+/usr/bin/dpkg-maintscript-helper: NOT AN ELF FILE
+/usr/bin/dpkg-mergechangelogs: NOT AN ELF FILE
+/usr/bin/dpkg-name: NOT AN ELF FILE
+/usr/bin/dpkg-parsechangelog: NOT AN ELF FILE
+/usr/bin/dpkg-query: ENABLED
+/usr/bin/dpkg-scanpackages: NOT AN ELF FILE
+/usr/bin/dpkg-scansources: NOT AN ELF FILE
+/usr/bin/dpkg-shlibdeps: NOT AN ELF FILE
+/usr/bin/dpkg-source: NOT AN ELF FILE
+/usr/bin/dpkg-split: ENABLED
+/usr/bin/dpkg-statoverride: ENABLED
+/usr/bin/dpkg-trigger: ENABLED
+/usr/bin/dpkg-vendor: NOT AN ELF FILE
+/usr/bin/dput: NOT AN ELF FILE
+/usr/bin/dscextract: NOT AN ELF FILE
+/usr/bin/dscverify: NOT AN ELF FILE
+/usr/bin/du: ENABLED
+/usr/bin/dumpkeys: ENABLED
+/usr/bin/dwp: ENABLED
+/usr/bin/easy_install3: NOT AN ELF FILE
+/usr/bin/ec2metadata: NOT AN ELF FILE
+/usr/bin/edit: NOT AN ELF FILE
+/usr/bin/editdiff: NOT AN ELF FILE
+/usr/bin/editor: ENABLED
+/usr/bin/edit-patch: NOT AN ELF FILE
+/usr/bin/eject: ENABLED
+/usr/bin/elfedit: ENABLED
+/usr/bin/enc2xs: NOT AN ELF FILE
+/usr/bin/encguess: NOT AN ELF FILE
+/usr/bin/env: ENABLED
+/usr/bin/envsubst: ENABLED
+/usr/bin/eqn: ENABLED
+/usr/bin/ex: ENABLED
+/usr/bin/expand: ENABLED
+/usr/bin/expiry: ENABLED
+/usr/bin/expr: ENABLED
+/usr/bin/factor: ENABLED
+/usr/bin/faillog: ENABLED
+/usr/bin/faked-sysv: ENABLED
+/usr/bin/faked-tcp: ENABLED
+/usr/bin/fakeroot: NOT AN ELF FILE
+/usr/bin/fakeroot-sysv: NOT AN ELF FILE
+/usr/bin/fakeroot-tcp: NOT AN ELF FILE
+/usr/bin/fallocate: ENABLED
+/usr/bin/file: ENABLED
+/usr/bin/file-rename: NOT AN ELF FILE
+/usr/bin/filterdiff: ENABLED
+/usr/bin/find: ENABLED
+/usr/bin/fixcvsdiff: NOT AN ELF FILE
+/usr/bin/flipdiff: ENABLED
+/usr/bin/flock: ENABLED
+/usr/bin/fmt: ENABLED
+/usr/bin/fold: ENABLED
+/usr/bin/free: ENABLED
+/usr/bin/from: ENABLED
+/usr/bin/funzip: ENABLED
+/usr/bin/g++: ENABLED
+/usr/bin/g++-5: ENABLED
+/usr/bin/gawk: ENABLED
+/usr/bin/gcc: ENABLED
+/usr/bin/gcc-5: ENABLED
+/usr/bin/gcc-ar: DISABLED
+/usr/bin/gcc-ar-5: DISABLED
+/usr/bin/gcc-nm: DISABLED
+/usr/bin/gcc-nm-5: DISABLED
+/usr/bin/gcc-ranlib: DISABLED
+/usr/bin/gcc-ranlib-5: DISABLED
+/usr/bin/gcov: ENABLED
+/usr/bin/gcov-5: ENABLED
+/usr/bin/gcov-tool: ENABLED
+/usr/bin/gcov-tool-5: ENABLED
+/usr/bin/gencat: DISABLED
+/usr/bin/gen-preseed: NOT AN ELF FILE
+/usr/bin/geqn: ENABLED
+/usr/bin/GET: NOT AN ELF FILE
+/usr/bin/getbuildlog: NOT AN ELF FILE
+/usr/bin/getconf: DISABLED
+/usr/bin/getent: DISABLED
+/usr/bin/getfacl: ENABLED
+/usr/bin/getkeycodes: ENABLED
+/usr/bin/getopt: ENABLED
+/usr/bin/gettext: ENABLED
+/usr/bin/gettextize: NOT AN ELF FILE
+/usr/bin/gettext.sh: NOT AN ELF FILE
+/usr/bin/git: ENABLED
+/usr/bin/git-receive-pack: ENABLED
+/usr/bin/git-shell: ENABLED
+/usr/bin/git-upload-archive: ENABLED
+/usr/bin/git-upload-pack: ENABLED
+/usr/bin/gold: ENABLED
+/usr/bin/gpasswd: ENABLED
+/usr/bin/gpg: ENABLED
+/usr/bin/gpgsplit: ENABLED
+/usr/bin/gpgv: ENABLED
+/usr/bin/gpg-zip: NOT AN ELF FILE
+/usr/bin/gpic: ENABLED
+/usr/bin/gprof: ENABLED
+/usr/bin/grep-aptavail: ENABLED
+/usr/bin/grep-available: ENABLED
+/usr/bin/grep-dctrl: ENABLED
+/usr/bin/grep-debtags: ENABLED
+/usr/bin/grepdiff: ENABLED
+/usr/bin/grep-excuses: NOT AN ELF FILE
+/usr/bin/grep-status: ENABLED
+/usr/bin/groff: ENABLED
+/usr/bin/grog: NOT AN ELF FILE
+/usr/bin/grops: ENABLED
+/usr/bin/grotty: ENABLED
+/usr/bin/groups: ENABLED
+/usr/bin/growpart: NOT AN ELF FILE
+/usr/bin/grub-editenv: ENABLED
+/usr/bin/grub-file: ENABLED
+/usr/bin/grub-fstest: ENABLED
+/usr/bin/grub-glue-efi: ENABLED
+/usr/bin/grub-kbdcomp: NOT AN ELF FILE
+/usr/bin/grub-menulst2cfg: ENABLED
+/usr/bin/grub-mkfont: ENABLED
+/usr/bin/grub-mkimage: ENABLED
+/usr/bin/grub-mklayout: ENABLED
+/usr/bin/grub-mknetdir: ENABLED
+/usr/bin/grub-mkpasswd-pbkdf2: ENABLED
+/usr/bin/grub-mkrelpath: ENABLED
+/usr/bin/grub-mkrescue: ENABLED
+/usr/bin/grub-mkstandalone: ENABLED
+/usr/bin/grub-mount: ENABLED
+/usr/bin/grub-ntldr-img: ENABLED
+/usr/bin/grub-render-label: ENABLED
+/usr/bin/grub-script-check: ENABLED
+/usr/bin/grub-syslinux2cfg: ENABLED
+/usr/bin/gtbl: ENABLED
+/usr/bin/h2ph: NOT AN ELF FILE
+/usr/bin/h2xs: NOT AN ELF FILE
+/usr/bin/hardening-check: NOT AN ELF FILE
+/usr/bin/hd: ENABLED
+/usr/bin/head: ENABLED
+/usr/bin/HEAD: NOT AN ELF FILE
+/usr/bin/helpztags: NOT AN ELF FILE
+/usr/bin/hexdump: ENABLED
+/usr/bin/hostid: ENABLED
+/usr/bin/hostnamectl: ENABLED
+/usr/bin/i386: ENABLED
+/usr/bin/iconv: DISABLED
+/usr/bin/id: ENABLED
+/usr/bin/igawk: NOT AN ELF FILE
+/usr/bin/infocmp: ENABLED
+/usr/bin/infotocap: ENABLED
+/usr/bin/install: ENABLED
+/usr/bin/instmodsh: NOT AN ELF FILE
+/usr/bin/interdiff: ENABLED
+/usr/bin/ionice: ENABLED
+/usr/bin/iostat: ENABLED
+/usr/bin/ipcmk: ENABLED
+/usr/bin/ipcrm: ENABLED
+/usr/bin/ipcs: ENABLED
+/usr/bin/iptables-xml: ENABLED
+/usr/bin/ischroot: ENABLED
+/usr/bin/iscsiadm: ENABLED
+/usr/bin/join: ENABLED
+/usr/bin/join-dctrl: ENABLED
+/usr/bin/json_pp: NOT AN ELF FILE
+/usr/bin/kbdinfo: ENABLED
+/usr/bin/keep-one-running: NOT AN ELF FILE
+/usr/bin/last: ENABLED
+/usr/bin/lastb: ENABLED
+/usr/bin/lastlog: ENABLED
+/usr/bin/lcf: NOT AN ELF FILE
+/usr/bin/ld: ENABLED
+/usr/bin/ld.bfd: ENABLED
+/usr/bin/ldd: NOT AN ELF FILE
+/usr/bin/ld.gold: ENABLED
+/usr/bin/less: ENABLED
+/usr/bin/lessecho: ENABLED
+/usr/bin/lessfile: NOT AN ELF FILE
+/usr/bin/lesskey: ENABLED
+/usr/bin/lesspipe: NOT AN ELF FILE
+/usr/bin/lexgrog: ENABLED
+/usr/bin/libnetcfg: NOT AN ELF FILE
+/usr/bin/licensecheck: NOT AN ELF FILE
+/usr/bin/line: DISABLED
+/usr/bin/link: ENABLED
+/usr/bin/lintian: NOT AN ELF FILE
+/usr/bin/lintian-info: NOT AN ELF FILE
+/usr/bin/lintian-lab-tool: NOT AN ELF FILE
+/usr/bin/linux32: ENABLED
+/usr/bin/linux64: ENABLED
+/usr/bin/linux-boot-prober: NOT AN ELF FILE
+/usr/bin/linux-check-removal: NOT AN ELF FILE
+/usr/bin/linux-update-symlinks: NOT AN ELF FILE
+/usr/bin/linux-version: NOT AN ELF FILE
+/usr/bin/list-unreleased: NOT AN ELF FILE
+/usr/bin/lnstat: ENABLED
+/usr/bin/loadkeys: ENABLED
+/usr/bin/loadunimap: ENABLED
+/usr/bin/locale: DISABLED
+/usr/bin/localectl: ENABLED
+/usr/bin/localedef: DISABLED
+/usr/bin/logger: ENABLED
+/usr/bin/logname: ENABLED
+/usr/bin/look: ENABLED
+/usr/bin/lorder: NOT AN ELF FILE
+/usr/bin/lsattr: ENABLED
+/usr/bin/lsb_release: NOT AN ELF FILE
+/usr/bin/lscpu: ENABLED
+/usr/bin/lsdiff: ENABLED
+/usr/bin/lsinitramfs: NOT AN ELF FILE
+/usr/bin/lsipc: ENABLED
+/usr/bin/lslocks: ENABLED
+/usr/bin/lslogins: ENABLED
+/usr/bin/lspci: ENABLED
+/usr/bin/lspgpot: NOT AN ELF FILE
+/usr/bin/lsusb: ENABLED
+/usr/bin/lwp-download: NOT AN ELF FILE
+/usr/bin/lwp-dump: NOT AN ELF FILE
+/usr/bin/lwp-mirror: NOT AN ELF FILE
+/usr/bin/lwp-request: NOT AN ELF FILE
+/usr/bin/lxc: ENABLED
+/usr/bin/lxcfs: ENABLED
+/usr/bin/lxd: ENABLED
+/usr/bin/lzcat: ENABLED
+/usr/bin/lzcmp: NOT AN ELF FILE
+/usr/bin/lzdiff: NOT AN ELF FILE
+/usr/bin/lzegrep: NOT AN ELF FILE
+/usr/bin/lzfgrep: NOT AN ELF FILE
+/usr/bin/lzgrep: NOT AN ELF FILE
+/usr/bin/lzless: NOT AN ELF FILE
+/usr/bin/lzma: ENABLED
+/usr/bin/lzmainfo: ENABLED
+/usr/bin/lzmore: NOT AN ELF FILE
+/usr/bin/make: ENABLED
+/usr/bin/make-first-existing-target: NOT AN ELF FILE
+/usr/bin/man: ENABLED
+/usr/bin/mandb: ENABLED
+/usr/bin/manifest: NOT AN ELF FILE
+/usr/bin/manpage-alert: NOT AN ELF FILE
+/usr/bin/manpath: ENABLED
+/usr/bin/mapscrn: ENABLED
+/usr/bin/mass-bug: NOT AN ELF FILE
+/usr/bin/mawk: ENABLED
+/usr/bin/mcookie: ENABLED
+/usr/bin/md5sum: ENABLED
+/usr/bin/md5sum.textutils: ENABLED
+/usr/bin/mergechanges: NOT AN ELF FILE
+/usr/bin/mesg: ENABLED
+/usr/bin/mk-build-deps: NOT AN ELF FILE
+/usr/bin/mkfifo: ENABLED
+/usr/bin/mk_modmap: NOT AN ELF FILE
+/usr/bin/mk-origtargz: NOT AN ELF FILE
+/usr/bin/mkpasswd: DISABLED
+/usr/bin/mksquashfs: ENABLED
+/usr/bin/mpstat: ENABLED
+/usr/bin/msgattrib: DISABLED
+/usr/bin/msgcat: DISABLED
+/usr/bin/msgcmp: ENABLED
+/usr/bin/msgcomm: DISABLED
+/usr/bin/msgconv: DISABLED
+/usr/bin/msgen: DISABLED
+/usr/bin/msgexec: DISABLED
+/usr/bin/msgfilter: ENABLED
+/usr/bin/msgfmt: ENABLED
+/usr/bin/msggrep: ENABLED
+/usr/bin/msginit: ENABLED
+/usr/bin/msgmerge: ENABLED
+/usr/bin/msgunfmt: ENABLED
+/usr/bin/msguniq: DISABLED
+/usr/bin/mtr: ENABLED
+/usr/bin/mtrace: NOT AN ELF FILE
+/usr/bin/namecheck: NOT AN ELF FILE
+/usr/bin/namei: ENABLED
+/usr/bin/nawk: ENABLED
+/usr/bin/ncal: ENABLED
+/usr/bin/neqn: NOT AN ELF FILE
+/usr/bin/newgidmap: ENABLED
+/usr/bin/newgrp: ENABLED
+/usr/bin/newuidmap: ENABLED
+/usr/bin/NF: NOT AN ELF FILE
+/usr/bin/ngettext: ENABLED
+/usr/bin/nice: ENABLED
+/usr/bin/nl: ENABLED
+/usr/bin/nm: ENABLED
+/usr/bin/nmudiff: NOT AN ELF FILE
+/usr/bin/nohup: ENABLED
+/usr/bin/nproc: ENABLED
+/usr/bin/nroff: NOT AN ELF FILE
+/usr/bin/nsenter: ENABLED
+/usr/bin/nstat: ENABLED
+/usr/bin/numfmt: ENABLED
+/usr/bin/objcopy: ENABLED
+/usr/bin/objdump: ENABLED
+/usr/bin/od: ENABLED
+/usr/bin/openssl: ENABLED
+/usr/bin/origtargz: NOT AN ELF FILE
+/usr/bin/os-prober: NOT AN ELF FILE
+/usr/bin/pager: ENABLED
+/usr/bin/parsechangelog: NOT AN ELF FILE
+/usr/bin/partx: ENABLED
+/usr/bin/passwd: ENABLED
+/usr/bin/paste: ENABLED
+/usr/bin/pastebinit: NOT AN ELF FILE
+/usr/bin/patch: ENABLED
+/usr/bin/pathchk: ENABLED
+/usr/bin/pbget: NOT AN ELF FILE
+/usr/bin/pbput: NOT AN ELF FILE
+/usr/bin/pbputs: NOT AN ELF FILE
+/usr/bin/pcimodules: ENABLED
+/usr/bin/pdb: NOT AN ELF FILE
+/usr/bin/pdb2.7: NOT AN ELF FILE
+/usr/bin/pdb3: NOT AN ELF FILE
+/usr/bin/pdb3.5: NOT AN ELF FILE
+/usr/bin/perl: ENABLED
+/usr/bin/perl5.22.1: ENABLED
+/usr/bin/perl5.22-x86_64-linux-gnu: DISABLED
+/usr/bin/perlbug: NOT AN ELF FILE
+/usr/bin/perldoc: NOT AN ELF FILE
+/usr/bin/perlivp: NOT AN ELF FILE
+/usr/bin/perlthanks: NOT AN ELF FILE
+/usr/bin/pg: ENABLED
+/usr/bin/pgrep: ENABLED
+/usr/bin/pic: ENABLED
+/usr/bin/pico: ENABLED
+/usr/bin/piconv: NOT AN ELF FILE
+/usr/bin/pidstat: ENABLED
+/usr/bin/pinky: ENABLED
+/usr/bin/pip3: NOT AN ELF FILE
+/usr/bin/pkaction: ENABLED
+/usr/bin/pkcheck: ENABLED
+/usr/bin/pkexec: ENABLED
+/usr/bin/pkill: ENABLED
+/usr/bin/pkttyagent: ENABLED
+/usr/bin/pl2pm: NOT AN ELF FILE
+/usr/bin/pldd: DISABLED
+/usr/bin/plotchangelog: NOT AN ELF FILE
+/usr/bin/pmap: ENABLED
+/usr/bin/pod2html: NOT AN ELF FILE
+/usr/bin/pod2man: NOT AN ELF FILE
+/usr/bin/pod2text: NOT AN ELF FILE
+/usr/bin/pod2usage: NOT AN ELF FILE
+/usr/bin/podchecker: NOT AN ELF FILE
+/usr/bin/podselect: NOT AN ELF FILE
+/usr/bin/POST: NOT AN ELF FILE
+/usr/bin/pr: ENABLED
+/usr/bin/preconv: ENABLED
+/usr/bin/prename: NOT AN ELF FILE
+/usr/bin/print: NOT AN ELF FILE
+/usr/bin/printenv: ENABLED
+/usr/bin/printerbanner: DISABLED
+/usr/bin/printf: ENABLED
+/usr/bin/prlimit: ENABLED
+/usr/bin/prove: NOT AN ELF FILE
+/usr/bin/psfaddtable: ENABLED
+/usr/bin/psfgettable: ENABLED
+/usr/bin/psfstriptable: ENABLED
+/usr/bin/psfxtable: ENABLED
+/usr/bin/pstruct: NOT AN ELF FILE
+/usr/bin/ptar: NOT AN ELF FILE
+/usr/bin/ptardiff: NOT AN ELF FILE
+/usr/bin/ptargrep: NOT AN ELF FILE
+/usr/bin/pts-subscribe: NOT AN ELF FILE
+/usr/bin/pts-unsubscribe: NOT AN ELF FILE
+/usr/bin/ptx: ENABLED
+/usr/bin/purge-old-kernels: NOT AN ELF FILE
+/usr/bin/pwdx: ENABLED
+/usr/bin/py3clean: NOT AN ELF FILE
+/usr/bin/py3compile: NOT AN ELF FILE
+/usr/bin/py3versions: NOT AN ELF FILE
+/usr/bin/pybuild: NOT AN ELF FILE
+/usr/bin/pyclean: NOT AN ELF FILE
+/usr/bin/pycompile: NOT AN ELF FILE
+/usr/bin/pydoc: NOT AN ELF FILE
+/usr/bin/pydoc2.7: NOT AN ELF FILE
+/usr/bin/pydoc3: NOT AN ELF FILE
+/usr/bin/pydoc3.5: NOT AN ELF FILE
+/usr/bin/pygettext: NOT AN ELF FILE
+/usr/bin/pygettext2.7: NOT AN ELF FILE
+/usr/bin/pygettext3: NOT AN ELF FILE
+/usr/bin/pygettext3.5: NOT AN ELF FILE
+/usr/bin/python: ENABLED
+/usr/bin/python2: ENABLED
+/usr/bin/python2.7: ENABLED
+/usr/bin/python3: ENABLED
+/usr/bin/python3.5: ENABLED
+/usr/bin/python3.5-config: NOT AN ELF FILE
+/usr/bin/python3.5m: ENABLED
+/usr/bin/python3.5m-config: NOT AN ELF FILE
+/usr/bin/python3-config: NOT AN ELF FILE
+/usr/bin/python3m: ENABLED
+/usr/bin/python3m-config: NOT AN ELF FILE
+/usr/bin/pyversions: NOT AN ELF FILE
+/usr/bin/ranlib: ENABLED
+/usr/bin/rc-alert: NOT AN ELF FILE
+/usr/bin/rcp: ENABLED
+/usr/bin/readelf: ENABLED
+/usr/bin/realpath: ENABLED
+/usr/bin/recode-sr-latin: DISABLED
+/usr/bin/recountdiff: NOT AN ELF FILE
+/usr/bin/rediff: ENABLED
+/usr/bin/rename: NOT AN ELF FILE
+/usr/bin/rename.ul: ENABLED
+/usr/bin/renice: ENABLED
+/usr/bin/report-hw: NOT AN ELF FILE
+/usr/bin/reset: ENABLED
+/usr/bin/resizecons: ENABLED
+/usr/bin/resizepart: ENABLED
+/usr/bin/rev: DISABLED
+/usr/bin/rgrep: NOT AN ELF FILE
+/usr/bin/rlogin: ENABLED
+/usr/bin/rmadison: NOT AN ELF FILE
+/usr/bin/routef: NOT AN ELF FILE
+/usr/bin/routel: NOT AN ELF FILE
+/usr/bin/rpcgen: DISABLED
+/usr/bin/rsh: ENABLED
+/usr/bin/rsync: ENABLED
+/usr/bin/rtstat: ENABLED
+/usr/bin/runcon: ENABLED
+/usr/bin/run-mailcap: NOT AN ELF FILE
+/usr/bin/run-one: NOT AN ELF FILE
+/usr/bin/run-one-constantly: NOT AN ELF FILE
+/usr/bin/run-one-until-failure: NOT AN ELF FILE
+/usr/bin/run-one-until-success: NOT AN ELF FILE
+/usr/bin/run-this-one: NOT AN ELF FILE
+/usr/bin/rview: ENABLED
+/usr/bin/rvim: ENABLED
+/usr/bin/sadf: ENABLED
+/usr/bin/sadt: NOT AN ELF FILE
+/usr/bin/sar: ENABLED
+/usr/bin/sar.sysstat: ENABLED
+/usr/bin/savelog: NOT AN ELF FILE
+/usr/bin/scp: ENABLED
+/usr/bin/screen: ENABLED
+/usr/bin/screendump: DISABLED
+/usr/bin/script: ENABLED
+/usr/bin/scriptreplay: ENABLED
+/usr/bin/sdiff: ENABLED
+/usr/bin/see: NOT AN ELF FILE
+/usr/bin/select-editor: NOT AN ELF FILE
+/usr/bin/sensible-browser: NOT AN ELF FILE
+/usr/bin/sensible-editor: NOT AN ELF FILE
+/usr/bin/sensible-pager: NOT AN ELF FILE
+/usr/bin/seq: ENABLED
+/usr/bin/setarch: ENABLED
+/usr/bin/setfacl: ENABLED
+/usr/bin/setkeycodes: ENABLED
+/usr/bin/setleds: DISABLED
+/usr/bin/setlogcons: ENABLED
+/usr/bin/setmetamode: DISABLED
+/usr/bin/setpci: ENABLED
+/usr/bin/setsid: ENABLED
+/usr/bin/setterm: ENABLED
+/usr/bin/sftp: ENABLED
+/usr/bin/sg: ENABLED
+/usr/bin/sha1sum: ENABLED
+/usr/bin/sha224sum: ENABLED
+/usr/bin/sha256sum: ENABLED
+/usr/bin/sha384sum: ENABLED
+/usr/bin/sha512sum: ENABLED
+/usr/bin/shasum: NOT AN ELF FILE
+/usr/bin/showconsolefont: ENABLED
+/usr/bin/showkey: ENABLED
+/usr/bin/shred: ENABLED
+/usr/bin/shuf: ENABLED
+/usr/bin/size: ENABLED
+/usr/bin/skill: ENABLED
+/usr/bin/slabtop: ENABLED
+/usr/bin/slogin: ENABLED
+/usr/bin/snap: ENABLED
+/usr/bin/snapctl: DISABLED
+/usr/bin/snapfuse: ENABLED
+/usr/bin/snice: ENABLED
+/usr/bin/soelim: ENABLED
+/usr/bin/sort: ENABLED
+/usr/bin/sort-dctrl: ENABLED
+/usr/bin/sosreport: NOT AN ELF FILE
+/usr/bin/sotruss: NOT AN ELF FILE
+/usr/bin/spellintian: NOT AN ELF FILE
+/usr/bin/splain: NOT AN ELF FILE
+/usr/bin/split: ENABLED
+/usr/bin/splitdiff: NOT AN ELF FILE
+/usr/bin/splitfont: ENABLED
+/usr/bin/sprof: DISABLED
+/usr/bin/ssh: ENABLED
+/usr/bin/ssh-add: ENABLED
+/usr/bin/ssh-agent: ENABLED
+/usr/bin/ssh-argv0: NOT AN ELF FILE
+/usr/bin/ssh-copy-id: NOT AN ELF FILE
+/usr/bin/ssh-keygen: ENABLED
+/usr/bin/ssh-keyscan: ENABLED
+/usr/bin/stat: ENABLED
+/usr/bin/stdbuf: ENABLED
+/usr/bin/strace: ENABLED
+/usr/bin/strings: ENABLED
+/usr/bin/strip: ENABLED
+/usr/bin/sudo: ENABLED
+/usr/bin/sudoedit: ENABLED
+/usr/bin/sudoreplay: ENABLED
+/usr/bin/sum: ENABLED
+/usr/bin/suspicious-source: NOT AN ELF FILE
+/usr/bin/svnpath: NOT AN ELF FILE
+/usr/bin/systemd-analyze: ENABLED
+/usr/bin/systemd-cat: ENABLED
+/usr/bin/systemd-cgls: ENABLED
+/usr/bin/systemd-cgtop: ENABLED
+/usr/bin/systemd-delta: ENABLED
+/usr/bin/systemd-detect-virt: ENABLED
+/usr/bin/systemd-path: ENABLED
+/usr/bin/systemd-resolve: ENABLED
+/usr/bin/systemd-run: ENABLED
+/usr/bin/systemd-stdio-bridge: ENABLED
+/usr/bin/t1ascii: ENABLED
+/usr/bin/t1asm: ENABLED
+/usr/bin/t1binary: ENABLED
+/usr/bin/t1disasm: ENABLED
+/usr/bin/t1mac: ENABLED
+/usr/bin/t1unmac: ENABLED
+/usr/bin/tabs: DISABLED
+/usr/bin/tac: ENABLED
+/usr/bin/tagpending: NOT AN ELF FILE
+/usr/bin/tail: ENABLED
+/usr/bin/tapestat: ENABLED
+/usr/bin/tasksel: NOT AN ELF FILE
+/usr/bin/taskset: ENABLED
+/usr/bin/tbl: ENABLED
+/usr/bin/tbl-dctrl: ENABLED
+/usr/bin/tee: ENABLED
+/usr/bin/test: ENABLED
+/usr/bin/tic: ENABLED
+/usr/bin/timedatectl: ENABLED
+/usr/bin/timeout: ENABLED
+/usr/bin/tload: ENABLED
+/usr/bin/tmux: ENABLED
+/usr/bin/toe: ENABLED
+/usr/bin/top: ENABLED
+/usr/bin/touch: ENABLED
+/usr/bin/tput: ENABLED
+/usr/bin/tr: ENABLED
+/usr/bin/transition-check: NOT AN ELF FILE
+/usr/bin/troff: ENABLED
+/usr/bin/truncate: ENABLED
+/usr/bin/tset: ENABLED
+/usr/bin/tsort: ENABLED
+/usr/bin/tty: ENABLED
+/usr/bin/tzselect: NOT AN ELF FILE
+/usr/bin/ubuntu-advantage: NOT AN ELF FILE
+/usr/bin/ubuntu-bug: NOT AN ELF FILE
+/usr/bin/ubuntu-core-launcher: ENABLED
+/usr/bin/ubuntu-support-status: NOT AN ELF FILE
+/usr/bin/ucf: NOT AN ELF FILE
+/usr/bin/ucfq: NOT AN ELF FILE
+/usr/bin/ucfr: NOT AN ELF FILE
+/usr/bin/ul: ENABLED
+/usr/bin/unattended-upgrade: NOT AN ELF FILE
+/usr/bin/unattended-upgrades: NOT AN ELF FILE
+/usr/bin/unexpand: ENABLED
+/usr/bin/unicode_stop: NOT AN ELF FILE
+/usr/bin/uniq: ENABLED
+/usr/bin/unlink: ENABLED
+/usr/bin/unlzma: ENABLED
+/usr/bin/unshare: ENABLED
+/usr/bin/unsquashfs: ENABLED
+/usr/bin/unwrapdiff: NOT AN ELF FILE
+/usr/bin/unxz: ENABLED
+/usr/bin/unzip: ENABLED
+/usr/bin/unzipsfx: ENABLED
+/usr/bin/update-alternatives: ENABLED
+/usr/bin/update-mime-database: NOT AN ELF FILE
+/usr/bin/update-mime-database.real: ENABLED
+/usr/bin/uptime: ENABLED
+/usr/bin/usb-devices: NOT AN ELF FILE
+/usr/bin/usbhid-dump: ENABLED
+/usr/bin/uscan: NOT AN ELF FILE
+/usr/bin/users: ENABLED
+/usr/bin/utmpdump: ENABLED
+/usr/bin/uupdate: NOT AN ELF FILE
+/usr/bin/vcs-run: NOT AN ELF FILE
+/usr/bin/VGAuthService: ENABLED
+/usr/bin/vi: ENABLED
+/usr/bin/view: ENABLED
+/usr/bin/vigpg: NOT AN ELF FILE
+/usr/bin/vim: ENABLED
+/usr/bin/vim.basic: ENABLED
+/usr/bin/vimdiff: ENABLED
+/usr/bin/vim.tiny: ENABLED
+/usr/bin/vimtutor: NOT AN ELF FILE
+/usr/bin/virtualenv: NOT AN ELF FILE
+/usr/bin/vmhgfs-fuse: ENABLED
+/usr/bin/vmstat: ENABLED
+/usr/bin/vmtoolsd: ENABLED
+/usr/bin/vmware-checkvm: ENABLED
+/usr/bin/vmware-guestproxycerttool: ENABLED
+/usr/bin/vmware-hgfsclient: ENABLED
+/usr/bin/vmware-namespace-cmd: ENABLED
+/usr/bin/vmware-rpctool: ENABLED
+/usr/bin/vmware-toolbox-cmd: ENABLED
+Invalid file path, file does not exist or is a directory
+/usr/bin/vmware-vgauth-cmd: ENABLED
+/usr/bin/vmware-vgauth-smoketest: ENABLED
+/usr/bin/vmware-vmblock-fuse: ENABLED
+/usr/bin/vmware-xferlogs: ENABLED
+/usr/bin/volname: ENABLED
+/usr/bin/w: ENABLED
+/usr/bin/wall: ENABLED
+/usr/bin/watch: ENABLED
+/usr/bin/wc: ENABLED
+/usr/bin/wdiff: ENABLED
+/usr/bin/wget: ENABLED
+/usr/bin/whatis: ENABLED
+/usr/bin/what-patch: NOT AN ELF FILE
+/usr/bin/whereis: ENABLED
+/usr/bin/which: NOT AN ELF FILE
+/usr/bin/who: ENABLED
+/usr/bin/whoami: ENABLED
+/usr/bin/whodepends: NOT AN ELF FILE
+/usr/bin/whois: ENABLED
+/usr/bin/who-permits-upload: NOT AN ELF FILE
+/usr/bin/who-uploads: NOT AN ELF FILE
+/usr/bin/wifi-status: NOT AN ELF FILE
+/usr/bin/wnpp-alert: NOT AN ELF FILE
+/usr/bin/wnpp-check: NOT AN ELF FILE
+/usr/bin/w.procps: ENABLED
+/usr/bin/wrap-and-sort: NOT AN ELF FILE
+/usr/bin/write: ENABLED
+/usr/bin/x86_64: ENABLED
+/usr/bin/x86_64-linux-gnu-addr2line: ENABLED
+/usr/bin/x86_64-linux-gnu-ar: ENABLED
+/usr/bin/x86_64-linux-gnu-as: ENABLED
+/usr/bin/x86_64-linux-gnu-c++filt: ENABLED
+/usr/bin/x86_64-linux-gnu-cpp: ENABLED
+/usr/bin/x86_64-linux-gnu-cpp-5: ENABLED
+/usr/bin/x86_64-linux-gnu-dwp: ENABLED
+/usr/bin/x86_64-linux-gnu-elfedit: ENABLED
+/usr/bin/x86_64-linux-gnu-g++: ENABLED
+/usr/bin/x86_64-linux-gnu-g++-5: ENABLED
+/usr/bin/x86_64-linux-gnu-gcc: ENABLED
+/usr/bin/x86_64-linux-gnu-gcc-5: ENABLED
+/usr/bin/x86_64-linux-gnu-gcc-ar: DISABLED
+/usr/bin/x86_64-linux-gnu-gcc-ar-5: DISABLED
+/usr/bin/x86_64-linux-gnu-gcc-nm: DISABLED
+/usr/bin/x86_64-linux-gnu-gcc-nm-5: DISABLED
+/usr/bin/x86_64-linux-gnu-gcc-ranlib: DISABLED
+/usr/bin/x86_64-linux-gnu-gcc-ranlib-5: DISABLED
+/usr/bin/x86_64-linux-gnu-gcov: ENABLED
+/usr/bin/x86_64-linux-gnu-gcov-5: ENABLED
+/usr/bin/x86_64-linux-gnu-gcov-tool: ENABLED
+/usr/bin/x86_64-linux-gnu-gcov-tool-5: ENABLED
+/usr/bin/x86_64-linux-gnu-gprof: ENABLED
+/usr/bin/x86_64-linux-gnu-ld: ENABLED
+/usr/bin/x86_64-linux-gnu-ld.bfd: ENABLED
+/usr/bin/x86_64-linux-gnu-ld.gold: ENABLED
+/usr/bin/x86_64-linux-gnu-nm: ENABLED
+/usr/bin/x86_64-linux-gnu-objcopy: ENABLED
+/usr/bin/x86_64-linux-gnu-objdump: ENABLED
+/usr/bin/x86_64-linux-gnu-python3.5-config: NOT AN ELF FILE
+/usr/bin/x86_64-linux-gnu-python3.5m-config: NOT AN ELF FILE
+/usr/bin/x86_64-linux-gnu-python3-config: NOT AN ELF FILE
+/usr/bin/x86_64-linux-gnu-python3m-config: NOT AN ELF FILE
+/usr/bin/x86_64-linux-gnu-ranlib: ENABLED
+/usr/bin/x86_64-linux-gnu-readelf: ENABLED
+/usr/bin/x86_64-linux-gnu-size: ENABLED
+/usr/bin/x86_64-linux-gnu-strings: ENABLED
+/usr/bin/x86_64-linux-gnu-strip: ENABLED
+/usr/bin/xargs: ENABLED
+/usr/bin/xdg-user-dir: NOT AN ELF FILE
+/usr/bin/xdg-user-dirs-update: ENABLED
+/usr/bin/xgettext: ENABLED
+/usr/bin/xsubpp: NOT AN ELF FILE
+/usr/bin/xxd: DISABLED
+/usr/bin/xz: ENABLED
+/usr/bin/xzcat: ENABLED
+/usr/bin/xzcmp: NOT AN ELF FILE
+/usr/bin/xzdiff: NOT AN ELF FILE
+/usr/bin/xzegrep: NOT AN ELF FILE
+/usr/bin/xzfgrep: NOT AN ELF FILE
+/usr/bin/xzgrep: NOT AN ELF FILE
+/usr/bin/xzless: NOT AN ELF FILE
+/usr/bin/xzmore: NOT AN ELF FILE
+/usr/bin/yes: ENABLED
+/usr/bin/zdump: DISABLED
+/usr/bin/zipdetails: NOT AN ELF FILE
+/usr/bin/zipgrep: NOT AN ELF FILE
+/usr/bin/zipinfo: ENABLED
+/usr/sbin/aa-exec: ENABLED
+/usr/sbin/aa-remove-unknown: NOT AN ELF FILE
+/usr/sbin/aa-status: NOT AN ELF FILE
+/usr/sbin/accessdb: DISABLED
+/usr/sbin/acpid: ENABLED
+/usr/sbin/addgroup: NOT AN ELF FILE
+/usr/sbin/add-shell: NOT AN ELF FILE
+/usr/sbin/adduser: NOT AN ELF FILE
+/usr/sbin/apparmor_status: NOT AN ELF FILE
+/usr/sbin/arp: ENABLED
+/usr/sbin/arpd: ENABLED
+/usr/sbin/atd: ENABLED
+/usr/sbin/bcache-super-show: ENABLED
+/usr/sbin/biosdecode: ENABLED
+/usr/sbin/chgpasswd: ENABLED
+/usr/sbin/chpasswd: ENABLED
+/usr/sbin/chroot: ENABLED
+/usr/sbin/cpgr: ENABLED
+/usr/sbin/cppw: ENABLED
+/usr/sbin/cron: ENABLED
+/usr/sbin/cryptdisks_start: NOT AN ELF FILE
+/usr/sbin/cryptdisks_stop: NOT AN ELF FILE
+/usr/sbin/delgroup: NOT AN ELF FILE
+/usr/sbin/deluser: NOT AN ELF FILE
+/usr/sbin/dmidecode: ENABLED
+/usr/sbin/dnsmasq: ENABLED
+/usr/sbin/dpkg-divert: ENABLED
+/usr/sbin/dpkg-preconfigure: NOT AN ELF FILE
+/usr/sbin/dpkg-reconfigure: NOT AN ELF FILE
+/usr/sbin/dpkg-statoverride: ENABLED
+/usr/sbin/e2freefrag: ENABLED
+/usr/sbin/e4defrag: ENABLED
+/usr/sbin/fdformat: ENABLED
+/usr/sbin/filefrag: ENABLED
+/usr/sbin/genl: ENABLED
+/usr/sbin/groupadd: ENABLED
+/usr/sbin/groupdel: ENABLED
+/usr/sbin/groupmod: ENABLED
+/usr/sbin/grpck: ENABLED
+/usr/sbin/grpconv: ENABLED
+/usr/sbin/grpunconv: ENABLED
+/usr/sbin/grub-bios-setup: ENABLED
+/usr/sbin/grub-install: ENABLED
+/usr/sbin/grub-macbless: ENABLED
+/usr/sbin/grub-mkconfig: NOT AN ELF FILE
+/usr/sbin/grub-mkdevicemap: ENABLED
+/usr/sbin/grub-probe: ENABLED
+/usr/sbin/grub-reboot: NOT AN ELF FILE
+/usr/sbin/grub-set-default: NOT AN ELF FILE
+/usr/sbin/grub-set-default-legacy-ec2: NOT AN ELF FILE
+/usr/sbin/grub-set-default.real: NOT AN ELF FILE
+/usr/sbin/iconvconfig: DISABLED
+/usr/sbin/install-sgmlcatalog: NOT AN ELF FILE
+/usr/sbin/invoke-rc.d: NOT AN ELF FILE
+/usr/sbin/iotop: NOT AN ELF FILE
+/usr/sbin/ip6tables-apply: NOT AN ELF FILE
+/usr/sbin/iptables-apply: NOT AN ELF FILE
+/usr/sbin/iscsid: ENABLED
+/usr/sbin/iscsi_discovery: NOT AN ELF FILE
+/usr/sbin/iscsi-iname: ENABLED
+/usr/sbin/iscsistart: ENABLED
+/usr/sbin/iucode_tool: ENABLED
+/usr/sbin/iucode-tool: ENABLED
+/usr/sbin/laptop-detect: NOT AN ELF FILE
+/usr/sbin/ldattach: ENABLED
+/usr/sbin/locale-gen: NOT AN ELF FILE
+/usr/sbin/logrotate: ENABLED
+/usr/sbin/luksformat: NOT AN ELF FILE
+/usr/sbin/make-bcache: ENABLED
+/usr/sbin/mkinitramfs: NOT AN ELF FILE
+/usr/sbin/mklost+found: DISABLED
+/usr/sbin/newusers: ENABLED
+/usr/sbin/nfnl_osf: ENABLED
+/usr/sbin/nologin: DISABLED
+/usr/sbin/overlayroot-chroot: NOT AN ELF FILE
+/usr/sbin/ownership: ENABLED
+/usr/sbin/pam-auth-update: NOT AN ELF FILE
+/usr/sbin/pam_getenv: NOT AN ELF FILE
+/usr/sbin/pam_timestamp_check: ENABLED
+/usr/sbin/pwck: ENABLED
+/usr/sbin/pwconv: ENABLED
+/usr/sbin/pwunconv: ENABLED
+/usr/sbin/readprofile: ENABLED
+/usr/sbin/remove-shell: NOT AN ELF FILE
+/usr/sbin/rmt: ENABLED
+/usr/sbin/rmt-tar: ENABLED
+/usr/sbin/rsyslogd: ENABLED
+/usr/sbin/rtcwake: ENABLED
+/usr/sbin/service: NOT AN ELF FILE
+/usr/sbin/setvesablank: ENABLED
+/usr/sbin/sshd: ENABLED
+/usr/sbin/sync-available: NOT AN ELF FILE
+/usr/sbin/tarcat: NOT AN ELF FILE
+/usr/sbin/tunelp: ENABLED
+/usr/sbin/tzconfig: NOT AN ELF FILE
+/usr/sbin/update-alternatives: ENABLED
+/usr/sbin/update-ca-certificates: NOT AN ELF FILE
+/usr/sbin/update-catalog: NOT AN ELF FILE
+/usr/sbin/update-grub: NOT AN ELF FILE
+/usr/sbin/update-grub2: NOT AN ELF FILE
+/usr/sbin/update-grub-gfxpayload: NOT AN ELF FILE
+/usr/sbin/update-grub-legacy-ec2: NOT AN ELF FILE
+/usr/sbin/update-initramfs: NOT AN ELF FILE
+/usr/sbin/update-locale: NOT AN ELF FILE
+/usr/sbin/update-mime: NOT AN ELF FILE
+/usr/sbin/update-passwd: ENABLED
+/usr/sbin/update-pciids: NOT AN ELF FILE
+/usr/sbin/update-rc.d: NOT AN ELF FILE
+/usr/sbin/update-usbids: NOT AN ELF FILE
+/usr/sbin/update-xmlcatalog: NOT AN ELF FILE
+/usr/sbin/upgrade-from-grub-legacy: NOT AN ELF FILE
+/usr/sbin/useradd: ENABLED
+/usr/sbin/userdel: ENABLED
+/usr/sbin/usermod: ENABLED
+/usr/sbin/validlocale: NOT AN ELF FILE
+/usr/sbin/vcstime: ENABLED
+/usr/sbin/vigr: ENABLED
+/usr/sbin/vipw: ENABLED
+/usr/sbin/visudo: ENABLED
+/usr/sbin/vpddecode: ENABLED
+/usr/sbin/xfs_admin: NOT AN ELF FILE
+/usr/sbin/xfs_bmap: NOT AN ELF FILE
+/usr/sbin/xfs_copy: ENABLED
+/usr/sbin/xfs_db: ENABLED
+/usr/sbin/xfs_estimate: ENABLED
+/usr/sbin/xfs_freeze: NOT AN ELF FILE
+/usr/sbin/xfs_fsr: ENABLED
+/usr/sbin/xfs_growfs: ENABLED
+/usr/sbin/xfs_info: NOT AN ELF FILE
+/usr/sbin/xfs_io: ENABLED
+/usr/sbin/xfs_logprint: ENABLED
+/usr/sbin/xfs_mdrestore: ENABLED
+/usr/sbin/xfs_metadump: NOT AN ELF FILE
+/usr/sbin/xfs_mkfile: NOT AN ELF FILE
+/usr/sbin/xfs_ncheck: NOT AN ELF FILE
+/usr/sbin/xfs_quota: ENABLED
+/usr/sbin/xfs_rtcp: ENABLED
+/usr/sbin/zerofree: DISABLED
+/usr/sbin/zic: DISABLED
+Invalid file path, file does not exist or is a directory
+Invalid file path, file does not exist or is a directory
