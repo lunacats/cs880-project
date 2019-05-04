@@ -66,7 +66,7 @@ def main():
             if symbol.name is not '':
                 print("\t%s - %s" % (i, symbol.name))
 
-    print("RELOCATION SECTIONS:")
+    print("\nRELOCATION SECTIONS:")
     for section in relocation_sections:
         print('%s:' % section.name)
         symbol_table = elffile.get_section(section['sh_link'])
@@ -76,14 +76,14 @@ def main():
             print("%s %s" % (symbol.name, addr))
 
     # disassemble
-    print("DISASSEMBLY:")
+    print("\nDISASSEMBLY:")
     code = elffile.get_section_by_name('.text')
     opcodes = code.data()
     addr = code['sh_addr']
     print("Entry Point: %s" % (hex(elffile.header['e_entry'])))
     md = Cs(CS_ARCH_X86, CS_MODE_64)
     for i in md.disasm(opcodes, addr):
-        print("0x%x:\t\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
+        print("0x%x:\t%s\t%s" % (i.address, i.mnemonic, i.op_str))
 
 
 def print_help():
