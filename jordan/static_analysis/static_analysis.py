@@ -63,7 +63,7 @@ def main():
         print("%s symbols:" % section.name)
         print("\tnumber - name")
         for i, symbol in enumerate(section.iter_symbols()):
-            if symbol.name is not None:
+            if symbol.name is not '':
                 print("\t%s - %s" % (i, symbol.name))
 
     print("RELOCATION SECTIONS:")
