@@ -18,8 +18,8 @@ import os
 import sys
 from capstone import *
 from elftools.elf.elffile import ELFFile
+from elftools.elf.relocation import RelocationSection
 from elftools.elf.sections import SymbolTableSection
-from elftools.elf.sections import RelocationSection
 from elftools.elf.sections import NullSection
 
 stack_check_sections = ["__stack_chk_fail", "__stack_smash_handler"]
