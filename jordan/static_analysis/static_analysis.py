@@ -55,8 +55,7 @@ def main():
             print("%s symbols:" % section.name)
             print("\tnumber - name")
             for i, symbol in enumerate(section.iter_symbols()):
-                if verbose:
-                    print("\t%s - %s" % (i, symbol.name))
+                print("\t%s - %s" % (i, symbol.name))
 
     # disassemble
     print("DISASSEMBLY:")
