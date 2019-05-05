@@ -66,7 +66,7 @@ def main():
         row_num_stack_protector = [k, "num_stack_protector", num_stack_protector]
         row_num_stack_protector_strong = [k, "num_stack_protector_strong", num_stack_protector_strong]
         row_num_stack_protector_all = [k, "num_stack_protector_all", num_stack_protector_all]
-        row_num_no_stack_protector = [k, "num_no_stack_protector", row_num_no_stack_protector]
+        row_num_no_stack_protector = [k, "num_no_stack_protector", num_no_stack_protector]
         
         csv_writer.writerow(row_num_gcc)
         csv_writer.writerow(row_num_stack_protector)
