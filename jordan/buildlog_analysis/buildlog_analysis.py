@@ -61,7 +61,7 @@ def main():
             elif '-fstack-protector-all' in gcc:
                 num_stack_protector_all += 1
             elif '-fno-stack-protector':
-                num_no_stack_protection += 1
+                num_no_stack_protector += 1
         row_num_gcc = [k, "num_gcc", num_gcc]
         row_num_stack_protector = [k, "num_stack_protector", num_stack_protector]
         row_num_stack_protector_strong = [k, "num_stack_protector_strong", num_stack_protector_strong]
