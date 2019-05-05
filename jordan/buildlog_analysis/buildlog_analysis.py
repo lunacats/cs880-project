@@ -43,7 +43,7 @@ def main():
     # name, num gcc, num_stack_protector, num_stack_protector_strong, num_stack_protector_all, num_no_stack_protection
     csvfd = open("buildlog_analysis.csv", 'w', newline='')
     csv_writer = csv.writer(csvfd, dialect='excel')
-    csv_writer.writerow(["package", "num_gcc", "stack_protector", "stack_protector_strong", "stack_protector_all", "no_stack_protection"])
+    csv_writer.writerow(["package", "type", "count"])
     print("lines:")
     for k in sorted(file_gcc_lines):
         print("%s = %s" % (k, file_gcc_lines[k]))
@@ -60,15 +60,19 @@ def main():
                 num_stack_protector_strong += 1
             elif '-fstack-protector-all' in gcc:
                 num_stack_protector_all += 1
-            else:
+            elif '-fno-stack-protector':
                 num_no_stack_protection += 1
-        row = [k,
-               num_gcc, 
-               num_stack_protector, 
-               num_stack_protector_strong, 
-               num_stack_protector_all, 
-               num_no_stack_protection]
-        csv_writer.writerow(row)
+        row_num_gcc = [k, "num_gcc", num_gcc]
+        row_num_stack_protector = [k, "num_stack_protector", num_stack_protector]
+        row_num_stack_protector_strong = [k, "num_stack_protector_strong", num_stack_protector_strong]
+        row_num_stack_protector_all = [k, "num_stack_protector_all", num_stack_protector_all]
+        row_num_no_stack_protector = [k, "num_no_stack_protector", row_num_no_stack_protector]
+        
+        csv_writer.writerow(row_num_gcc)
+        csv_writer.writerow(row_num_stack_protector)
+        csv_writer.writerow(row_num_stack_protector_strong)
+        csv_writer.writerow(row_num_stack_protector_all)
+        csv_writer.writerow(row_num_no_stack_protector)
     csvfd.close()
     
 

@@ -11,16 +11,58 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 getwd()
 library(ggplot2)
 nvd_data = read.csv("nvd/nvd.csv")
+nvd_data
+
+nvd_data_count = as.data.frame(table(nvd_data$cve_type))
+nvd_data_count_sorted = nvd_data_count[order(-nvd_data_count$Freq),]
+names(nvd_data_count_sorted) <- c("CWE", "count")
 ```
 
 ```{r}
 nvd_data = read.csv("nvd/nvd.csv")
-nvd_data
+bof_barfill <- "#4271AE"
+bof_barlines <- "#1F3552"
 
-buffer_overflows = filter(nvd_data, buffer_overflow == "TRUE")
-other_vulns = filter(nvd_data, buffer_overflow == "FALSE")
+ggplot(nvd_data, aes(x=cvssv3)) + 
+  geom_histogram(data=subset(nvd_data, buffer_overflow == FALSE), fill = "blue", alpha = 0.4) +
+  geom_histogram(data=subset(nvd_data, buffer_overflow == TRUE), fill = "red", alpha = 0.8) +
+  scale_x_continuous(breaks = seq(0, 10, 1),
+                     limits=c(0, 10)) +
+  ggtitle("CVSSv3 Score Frequency") +
+  theme_bw() +
+  geom_vline(aes(xintercept=mean(subset(nvd_data$cvssv3, buffer_overflow == TRUE))), 
+             color="red", linetype="dashed") + 
+  geom_vline(aes(xintercept=mean(subset(nvd_data$cvssv3, buffer_overflow == FALSE))), 
+             color="blue", linetype="dashed")  
 
-ggplot(buffer_overflows, aes(x=cvssv3)) + geom_histogram()
 ```
 
+Frequency by type:
+```{r}
+nvd_data_count_sorted
+ggplot(nvd_data_count_sorted, 
+       aes(x=reorder(CWE, -count), 
+           y=count, 
+           fill=factor(ifelse(CWE=="CWE-119", "Buffer Error", "Other")))) +
+  geom_bar(data=subset(nvd_data_count_sorted, count > 5), stat="identity") +
+  xlab("CWE") +
+  ylab("Count") +
+  ggtitle("2019 YTD Vulnerabilities by CWE") +
+  scale_fill_manual(name = "CWE", values=c("red", "grey50")) +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1))
+```
 
+Performance analysis:
+```{r}
+perf_data = read.csv("../tomas/performance.csv")
+perf_data
+
+ggplot(perf_data, aes(x=time)) +
+  geom_histogram(data=subset(perf_data, type == "with_protection"), fill = "blue", alpha = 1.0, bins=100) + 
+  geom_histogram(data=subset(perf_data, type == "without_protection"), fill = "red", alpha = 1.0, bins=100) +
+  xlab("run time (s)") +
+  ggtitle("Performance Comparison") +
+  theme_bw()
+
+```
