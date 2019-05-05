@@ -2,3 +2,4 @@
 *.log.*
 *.data
 *stack-protector*
+*.json

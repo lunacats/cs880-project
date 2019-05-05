@@ -1,0 +1,26 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+getwd()
+library(ggplot2)
+nvd_data = read.csv("nvd/nvd.csv")
+```
+
+```{r}
+nvd_data = read.csv("nvd/nvd.csv")
+nvd_data
+
+buffer_overflows = filter(nvd_data, buffer_overflow == "TRUE")
+other_vulns = filter(nvd_data, buffer_overflow == "FALSE")
+
+ggplot(buffer_overflows, aes(x=cvssv3)) + geom_histogram()
+```
+
+
