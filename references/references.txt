@@ -1,4 +1,4 @@
-(J and T) AlephOne. "Smashing the stack for fun an profit". Phrack, 7 (49), November, 1996. http://phrack.org/issues/49/14.html#article
+(J and T) AlephOne. "Smashing the stack for fun and profit". Phrack, 7 (49), November, 1996. http://phrack.org/issues/49/14.html#article
 
 (J and T) Cowan, Crispan, et al. "Stackguard: Automatic adaptive detection and prevention of buffer-overflow attacks." USENIX Security Symposium. Vol. 98. 1998.
 

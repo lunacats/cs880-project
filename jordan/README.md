@@ -18,5 +18,5 @@ cat all_packages | grep -ve '^#' | awk '{print $2}' | head -n1000 > top_1000_pac
 ## Download Build Logs
 
 Download all build logs for these packages:
-`mkdir buildlog && cd buildlog && while read pkg; do getbuildlog $pkg last amd64; done < ../top_1000_packages`
+`mkdir buildlogs && cd buildlogs && while read pkg; do getbuildlog $pkg last amd64; done < ../top_1000_packages`
  

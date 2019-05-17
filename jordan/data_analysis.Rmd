@@ -55,14 +55,55 @@ ggplot(nvd_data_count_sorted,
 
 Performance analysis:
 ```{r}
+fill_blue <- "#4271AE"
 perf_data = read.csv("../tomas/performance.csv")
+colnames(perf_data) <- c("type", "time")
 perf_data
 
 ggplot(perf_data, aes(x=time)) +
-  geom_histogram(data=subset(perf_data, type == "with_protection"), fill = "blue", alpha = 1.0, bins=100) + 
-  geom_histogram(data=subset(perf_data, type == "without_protection"), fill = "red", alpha = 1.0, bins=100) +
+  geom_histogram(data=subset(perf_data, type == "with_protection"), fill = fill, alpha = 0.6, bins=100) + 
+  geom_histogram(data=subset(perf_data, type == "without_protection"), fill = "red", alpha = 0.7, bins=100) +
   xlab("run time (s)") +
-  ggtitle("Performance Comparison") +
+  ggtitle("Stack Protection Performance Comparison") +
   theme_bw()
 
 ```
+
+
+Buildlog analysis:
+```{r}
+line <- "#1F3552"
+fill <- "#4271AE"
+buildlog_data = read.csv("buildlog_analysis.csv")
+buildlog_data
+
+buildlog_counts = as.data.frame(xtabs(formula=count~type + count, data=buildlog_data))
+buildlog_counts_no_gcc = subset(buildlog_counts, type != "num_gcc")
+
+
+ggplot(data=buildlog_counts, aes(x=type, y=Freq)) +
+  geom_bar(stat="identity", fill=fill, colour=line, alpha=0.6) +
+  theme_bw() +
+  xlab("Option") +
+  ylab("Count") +
+  ggtitle("Buildlog GCC Stack Protection Option Usage") +
+  geom_text(aes(label=Freq), color="black", size=3.5, vjust=1, position=position_dodge(0.9)) +
+  theme(axis.text.x=element_text(angle=15, hjust=1))
+```
+
+Binary static analysis:
+```{r}
+stack_protection_status = read.csv("static_analysis/stack_protection_status.csv")
+stack_protection_status
+
+stack_protection_counts = as.data.frame(table(stack_protection_status$stack_protection))
+names(stack_protection_counts) <- c("status", "count")
+
+ggplot(data=stack_protection_counts, aes(x=status, y=count)) +
+  geom_bar(stat="identity", fill=fill, colour=line, alpha=0.6) +
+  theme_bw() +
+  ggtitle("System Binary Stack Protection Status") +
+  geom_text(aes(label=count), color="black", size=3.5, vjust=1, position=position_dodge(0.9)) +
+  theme(axis.text.x=element_text(angle=15, hjust=1))
+```
+
